@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_background"
+    android:orientation="vertical"
+    android:scrollbars="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/loader"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/loaderAnimation"
+                android:layout_width="@dimen/loader_size"
+                android:layout_height="@dimen/loader_size"
+                app:layout_constraintDimensionRatio="1:1"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_fileName="loader.json"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/version_checking"
+                android:textSize="@dimen/text_secondary"
+                android:textColor="@color/text"
+                android:gravity="center"
+                app:layout_constraintWidth_percent="0.75"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/loaderAnimation"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/updated"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/version_updated"
+            android:textSize="@dimen/text_secondary"
+            android:textColor="@color/text"
+            android:gravity="center"
+            app:layout_constraintWidth_percent="0.75"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/update"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/version_not_updated"
+                android:textSize="@dimen/text_secondary"
+                android:textColor="@color/text"
+                android:gravity="center"
+                android:layout_marginBottom="13dp"
+                app:layout_constraintWidth_percent="0.75"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/btnDownloadOnPhone"/>
+
+            <TextView
+                android:id="@+id/btnDownloadOnPhone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/design_btn"
+                android:foreground="@drawable/design_btn_effect"
+                android:text="@string/version_btn_download_phone"
+                android:textSize="@dimen/btn_text"
+                android:textColor="@color/btn_text"
+                android:gravity="center"
+                android:padding="3dp"
+                android:clickable="true"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintWidth_percent="0.75"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/installer"/>
+
+            <TextView
+                android:id="@+id/installer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/version_installer"
+                android:textSize="@dimen/btn_text"
+                android:textColor="@color/text"
+                android:gravity="center"
+                android:padding="3dp"
+                app:layout_constraintWidth_percent="0.75"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

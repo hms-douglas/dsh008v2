@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ic_launcher_background">#000000</color>
+
+    <color name="main">#FBD75B</color>
+
+    <color name="activity_background">#000000</color>
+    <color name="activity_clock">#949494</color>
+
+    <color name="activity_title">@color/main</color>
+
+    <color name="group_background">#252525</color>
+    <color name="group_item_divisor">#393939</color>
+    <color name="group_item_effect">#EB313337</color>
+
+    <color name="group_title_text">#949494</color>
+    <color name="group_button_text">#E6E6E6</color>
+    <color name="group_button_sub_text">@color/main</color>
+
+    <color name="group_text">#7B7B7B</color>
+
+    <color name="switch_background_off">#949494</color>
+
+    <color name="text">#E6E6E6</color>
+
+    <color name="btn">@color/main</color>
+    <color name="btn_text">#000000</color>
+    <color name="btn_effect">#EB313337</color>
+    <color name="btn_secondary">#393939</color>
+    <color name="btn_secondary_text">#E6E6E6</color>
+</resources>

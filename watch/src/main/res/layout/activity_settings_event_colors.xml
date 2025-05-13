@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activityNestedScrollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_background"
+    android:orientation="vertical"
+    android:scrollbars="vertical"
+    tools:context=".activity.SettingsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/screen_sides_padding"
+        android:paddingRight="@dimen/screen_sides_padding"
+        android:paddingBottom="@dimen/screen_scroll_bottom_padding"
+        android:gravity="center_horizontal">
+
+        <include layout="@layout/include_activity_clock"/>
+
+        <include layout="@layout/include_activity_title"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/screen_sides_padding"
+            android:paddingRight="@dimen/screen_sides_padding"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginBottom="@dimen/space_between_items_list"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/btnAdd"
+            android:layout_width="@dimen/btn_circle"
+            android:layout_height="@dimen/btn_circle"
+            android:background="@drawable/circle"
+            android:backgroundTint="@color/main"
+            android:clickable="true"
+            android:layout_marginTop="@dimen/space_between_items_list"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/iconConfirm"
+                android:layout_width="@dimen/btn_circle_icon"
+                android:layout_height="@dimen/btn_circle_icon"
+                android:background="@drawable/icon_add"
+                android:backgroundTint="@color/activity_background"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/group_text"
+            android:textSize="@dimen/group_text"
+            android:text="@string/event_colors_description"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/space_between_items_list"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/group_text"
+            android:textSize="@dimen/group_text"
+            android:text="@string/event_colors_helper"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/space_between_items_list"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/design_group_background"
+            android:clipToOutline="true"
+            android:layout_marginTop="@dimen/space_between_items_list">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/btnPreviewCalendar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/group_button_height"
+                android:orientation="vertical"
+                android:clickable="true"
+                android:foreground="@drawable/design_group_item_effect"
+                android:background="@drawable/list_item_divisor_horizontal_bottom">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:paddingStart="@dimen/group_items_space_side"
+                    android:text="@string/preview"
+                    android:textColor="@color/group_button_text"
+                    android:textSize="@dimen/group_button_font"
+                    android:gravity="center_vertical"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/group_button_height"
+                android:orientation="vertical"
+                android:clickable="true">
+
+            <Switch
+                android:id="@+id/switchForcePalette"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="@dimen/group_items_space_side"
+                android:paddingEnd="@dimen/group_items_space_side"
+                android:text="@string/force_palette"
+                android:textColor="@color/group_button_text"
+                android:textSize="@dimen/group_button_font"
+                android:gravity="center_vertical"
+                android:thumb="@drawable/ui_switch_thumb"
+                android:track="@drawable/ui_switch_track"
+                android:foreground="@drawable/design_group_item_effect"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/design_group_background"
+            android:clipToOutline="true"
+            android:layout_marginTop="@dimen/space_between_items_list">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/btnRemoveAll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/group_button_height"
+                android:orientation="vertical"
+                android:clickable="true"
+                android:foreground="@drawable/design_group_item_effect">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:paddingStart="@dimen/group_items_space_side"
+                    android:text="@string/more_remove_colors"
+                    android:textColor="@color/group_button_text"
+                    android:textSize="@dimen/group_button_font"
+                    android:gravity="center_vertical"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

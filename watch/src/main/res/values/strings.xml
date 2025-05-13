@@ -1,0 +1,95 @@
+<resources>
+    <string name="app_name" translatable="false">DS H008 v2</string>
+
+    <string name="complication_calendar">Calendar</string>
+    <string name="complication_calendar_description">@string/complication_calendar</string>
+
+    <string name="calendar_tile">Calendar</string>
+    <string name="calendar_tile_description">@string/calendar_tile</string>
+
+    <string name="toast_success_done">Done!</string>
+
+    <string name="toast_info_permission">Permission to access calendar is required!</string>
+    <string name="toast_info_preview">No events to render preview!</string>
+    <string name="toast_info_color">Tap and hold to remove it!</string>
+    <string name="toast_info_check_phone">Check your phone!</string>
+
+    <string name="toast_error_generic">Something went wrong!</string>
+    <string name="toast_error_input_freq_min">Minimum time is 15 minutes!</string>
+    <string name="toast_error_update">Could not check for update. Try again later!</string>
+
+    <string name="configuration_generic_flavor">Pre-made</string>
+
+    <string name="configuration_background_color">Background color</string>
+
+    <string name="configuration_hand_hour_color">Hour hand color</string>
+    <string name="configuration_hand_minute_color">Minute hand color</string>
+    <string name="configuration_hand_second_color">Second hand color</string>
+
+    <string name="configuration_complications_background_color">Complication background color</string>
+    <string name="configuration_complications_main_color">Complication main color</string>
+    <string name="configuration_complications_text_color">Complication text color</string>
+
+    <string name="configuration_hand_style">Hand style</string>
+    <string name="configuration_hand_style_rounded_1">Rounded 1</string>
+    <string name="configuration_hand_style_rounded_1_no_second">Rounded 1 (no seconds)</string>
+    <string name="configuration_hand_style_rounded_2">Rounded 2</string>
+    <string name="configuration_hand_style_rounded_2_no_second">Rounded 2 (no seconds)</string>
+    <string name="configuration_hand_style_rounded_3">Rounded 3</string>
+    <string name="configuration_hand_style_rounded_3_no_second">Rounded 3 (no seconds)</string>
+    <string name="configuration_hand_style_squared_1">Squared 1</string>
+    <string name="configuration_hand_style_squared_1_no_second">Squared 1 (no seconds)</string>
+    <string name="configuration_hand_style_squared_2">Squared 2</string>
+    <string name="configuration_hand_style_squared_2_no_second">Squared 2 (no seconds)</string>
+    <string name="configuration_hand_style_other_1">Other 1</string>
+    <string name="configuration_hand_style_other_1_no_second">Other 1 (no seconds)</string>
+    <string name="configuration_hand_style_digital_1">Digital 1</string>
+    <string name="configuration_hand_style_digital_1_no_minute">Digital 1 (no minute)</string>
+
+    <string name="no_events">No events</string>
+
+    <string name="group_calendar">Calendar</string>
+
+    <string name="background_color">Background color</string>
+
+    <string name="event_colors">Palette</string>
+    <string name="event_colors_description">The app will try to use the event color. In case it cannot be used the app will use the colors added here, in sequence. In case of no colors here the app will use a default palette. Enable the option bellow to force the use of this color palette even if a color is set to the event.</string>
+    <string name="event_colors_helper">Tap and hold a color to remove it!</string>
+    <string name="force_palette">Force palette</string>
+
+    <string name="show_all_day_events">All day events</string>
+    <string name="show_rounded_corners">Rounded corners</string>
+    <string name="show_border_only">Border only</string>
+    <string name="show_hidden_events_number">Show amount of events hidden</string>
+    <string name="force_uppercase">Force uppercase</string>
+    <string name="events_info_color">Info text color</string>
+    <string name="preview">Preview</string>
+
+    <string name="group_tile">Tile</string>
+
+    <string name="show_minute_hand">Minute hand</string>
+    <string name="show_last_update_time">Show last update time</string>
+
+    <string name="group_app">App</string>
+
+    <string name="version">Version</string>
+    <string name="version_checking">Checking for update…</string>
+    <string name="version_updated">Your app is up to date!</string>
+    <string name="version_not_updated">A new version is available!</string>
+    <string name="version_btn_download_phone">Download on phone</string>
+    <string name="version_installer">Or use the phone app to update!</string>
+
+    <string name="github">Open project on github</string>
+
+    <string name="warning_deep_sleep">
+    Make sure the app is not in the <b>Deep sleep</b> list so it can work correctly!
+    \n\nGo to <b>Settings > Battery > Sleeping apps</b>;
+    \nIf the app is in the list, press and hold then click on <b>Remove from list</b>.
+    \n\nYou can always touch the watch face to update it!
+    </string>
+
+    <string name="confirm">Confirm?</string>
+
+    <string name="more_remove_colors">Remove all colors</string>
+    <string name="more_reset">Reset settings</string>
+</resources>

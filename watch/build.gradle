@@ -1,0 +1,94 @@
+plugins {
+    alias(libs.plugins.android.application)
+}
+
+android {
+    namespace 'dev.dect.wear.watchface.dsh008.v2'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "dev.dect.wear.watchface.dsh008.v2"
+        minSdk 33 //33 = Wear OS 4
+        targetSdk 34
+        versionCode 1
+        versionName "1.0.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    /*
+     * BASIC UI INTERFACE ================================================
+     */
+    //noinspection UseTomlInstead
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+    //noinspection UseTomlInstead
+    implementation 'com.google.android.material:material:1.12.0'
+    //noinspection UseTomlInstead
+    implementation 'androidx.activity:activity:1.8.0'
+    //noinspection UseTomlInstead
+    implementation 'androidx.constraintlayout:constraintlayout:2.2.1'
+
+    /*
+     * BASIC WEAR OS ======================================================
+     */
+    //noinspection UseTomlInstead
+    implementation 'com.google.android.gms:play-services-wearable:19.0.0'
+    //noinspection UseTomlInstead
+    implementation 'androidx.wear:wear:1.3.0'
+
+
+    /*
+     * COMPLICATION ======================================================
+     */
+    //noinspection UseTomlInstead
+    implementation 'androidx.wear.watchface:watchface-complications-data-source:1.2.1'
+
+
+    /*
+     * TILE ======================================================
+     */
+    //noinspection UseTomlInstead
+    implementation "androidx.wear.tiles:tiles:1.4.1"
+    //noinspection UseTomlInstead
+    implementation "androidx.wear.protolayout:protolayout:1.2.1"
+    //noinspection UseTomlInstead
+    implementation "androidx.wear.protolayout:protolayout-material:1.2.1"
+    //noinspection UseTomlInstead
+    implementation "androidx.wear.protolayout:protolayout-expression:1.2.1"
+    //noinspection UseTomlInstead
+    implementation "androidx.concurrent:concurrent-futures:1.2.0"
+    //noinspection UseTomlInstead
+    implementation "com.google.guava:guava:31.0.1-android"
+
+    /*
+     * INTERNAL LIBRARY ======================================================
+     */
+    implementation project(':library')
+
+    /*
+     * OTHER ======================================================
+     */
+    //noinspection UseTomlInstead
+    implementation 'com.airbnb.android:lottie:3.5.0' //ANIMATION | Used on the loader animation
+    //noinspection UseTomlInstead
+    implementation 'com.github.madrapps:pikolo:2.0.2' //COLOR PICKER | Used on the color picker activity
+    //noinspection UseTomlInstead
+    implementation 'androidx.wear:wear-remote-interactions:1.1.0' //TO SEND INTENTS TO THE PHONE
+    //noinspection UseTomlInstead
+    implementation 'androidx.work:work-runtime:2.9.1'//TO SCHEDULE UPDATES (complication default updater does not seem to work with "LARGE_IMAGE"
+
+    //noinspection UseTomlInstead
+    compileOnly 'com.google.android.wearable:wearable:2.9.0'
+}

@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activityScrollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_background"
+    android:orientation="vertical"
+    android:scrollbars="vertical"
+    tools:context=".activity.SettingsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/screen_sides_padding"
+        android:paddingRight="@dimen/screen_sides_padding"
+        android:paddingBottom="@dimen/screen_scroll_bottom_padding"
+        android:gravity="center_horizontal">
+
+        <include layout="@layout/include_activity_clock"/>
+
+        <include layout="@layout/include_activity_title"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/group_title_margin_bottom"
+            android:text="@string/group_calendar"
+            android:textColor="@color/group_title_text"
+            android:textSize="@dimen/group_title_font"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/design_group_background"
+            android:clipToOutline="true">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/btnPreviewCalendar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/group_button_height"
+                android:clickable="true"
+                android:foreground="@drawable/design_group_item_effect"
+                android:background="@drawable/list_item_divisor_horizontal_bottom">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:paddingStart="@dimen/group_items_space_side"
+                    android:text="@string/preview"
+                    android:textColor="@color/group_button_text"
+                    android:textSize="@dimen/group_button_font"
+                    android:gravity="center_vertical"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/btnBackgroundColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/group_button_height"
+                android:clickable="true"
+                android:foreground="@drawable/design_group_item_effect"
+                android:background="@drawable/list_item_divisor_horizontal_bottom">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:paddingStart="@dimen/group_items_space_side"
+                    android:text="@string/background_color"
+                    android:textColor="@color/group_button_text"
+                    android:textSize="@dimen/group_button_font"
+                    android:gravity="center_vertical"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/btnBackgroundColorColor"/>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/btnBackgroundColorColor"
+                    android:layout_width="@dimen/group_button_color_icon"
+                    android:layout_height="@dimen/group_button_color_icon"
+                    android:background="@drawable/circle"
+                    android:layout_marginEnd="@dimen/group_items_space_side"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/btnEventColors"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/group_button_height"
+                android:clickable="true"
+                android:foreground="@drawable/design_group_item_effect"
+                android:background="@drawable/list_item_divisor_horizontal_bottom">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:paddingStart="@dimen/group_items_space_side"
+                    android:text="@string/event_colors"
+                    android:textColor="@color/group_button_text"
+                    android:textSize="@dimen/group_button_font"
+                    android:gravity="center_vertical"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/btnEventColorsColor"/>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/btnEventColorsColor"
+                    android:layout_width="@dimen/group_button_color_icon"
+                    android:layout_height="@dimen/group_button_color_icon"
+                    android:background="@drawable/color_wheel"
+                    android:layout_marginEnd="@dimen/group_items_space_side"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/group_button_height"
+                android:clickable="true"
+                android:background="@drawable/list_item_divisor_horizontal_bottom">
+
+                <Switch
+                    android:id="@+id/switchAllDay"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingStart="@dimen/group_items_space_side"
+                    android:paddingEnd="@dimen/group_items_space_side"
+                    android:text="@string/show_all_day_events"
+                    android:textColor="@color/group_button_text"
+                    android:textSize="@dimen/group_button_font"
+                    android:gravity="center_vertical"
+                    android:thumb="@drawable/ui_switch_thumb"
+                    android:track="@drawable/ui_switch_track"
+                    android:foreground="@drawable/design_group_item_effect"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/group_button_height"
+                android:clickable="true"
+                android:background="@drawable/list_item_divisor_horizontal_bottom">
+
+                <Switch
+                    android:id="@+id/switchRoundedCorners"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingStart="@dimen/group_items_space_side"
+                    android:paddingEnd="@dimen/group_items_space_side"
+                    android:text="@string/show_rounded_corners"
+                    android:textColor="@color/group_button_text"
+                    android:textSize="@dimen/group_button_font"
+                    android:gravity="center_vertical"
+                    android:thumb="@drawable/ui_switch_thumb"
+                    android:track="@drawable/ui_switch_track"
+                    android:foreground="@drawable/design_group_item_effect"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/group_button_height"
+                android:clickable="true"
+                android:background="@drawable/list_item_divisor_horizontal_bottom">
+
+                <Switch
+                    android:id="@+id/switchBorderOnly"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingStart="@dimen/group_items_space_side"
+                    android:paddingEnd="@dimen/group_items_space_side"
+                    android:text="@string/show_border_only"
+                    android:textColor="@color/group_button_text"
+                    android:textSize="@dimen/group_button_font"
+                    android:gravity="center_vertical"
+                    android:thumb="@drawable/ui_switch_thumb"
+                    android:track="@drawable/ui_switch_track"
+                    android:foreground="@drawable/design_group_item_effect"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/group_button_height"
+                android:clickable="true"
+                android:background="@drawable/list_item_divisor_horizontal_bottom">
+
+                <Switch
+                    android:id="@+id/switchHiddenNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingStart="@dimen/group_items_space_side"
+                    android:paddingEnd="@dimen/group_items_space_side"
+                    android:text="@string/show_hidden_events_number"
+                    android:textColor="@color/group_button_text"
+                    android:textSize="@dimen/group_button_font"
+                    android:gravity="center_vertical"
+                    android:thumb="@drawable/ui_switch_thumb"
+                    android:track="@drawable/ui_switch_track"
+                    android:foreground="@drawable/design_group_item_effect"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/group_button_height"
+                android:clickable="true"
+                android:background="@drawable/list_item_divisor_horizontal_bottom">
+
+                <Switch
+                    android:id="@+id/switchForceUppercase"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingStart="@dimen/group_items_space_side"
+                    android:paddingEnd="@dimen/group_items_space_side"
+                    android:text="@string/force_uppercase"
+                    android:textColor="@color/group_button_text"
+                    android:textSize="@dimen/group_button_font"
+                    android:gravity="center_vertical"
+                    android:thumb="@drawable/ui_switch_thumb"
+                    android:track="@drawable/ui_switch_track"
+                    android:foreground="@drawable/design_group_item_effect"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/btnInfoColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/group_button_height"
+                android:clickable="true"
+                android:foreground="@drawable/design_group_item_effect">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:paddingStart="@dimen/group_items_space_side"
+                    android:paddingEnd="@dimen/group_items_space_side"
+                    android:text="@string/events_info_color"
+                    android:textColor="@color/group_button_text"
+                    android:textSize="@dimen/group_button_font"
+                    android:gravity="center_vertical"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/btnInfoColorColor"/>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/btnInfoColorColor"
+                    android:layout_width="@dimen/group_button_color_icon"
+                    android:layout_height="@dimen/group_button_color_icon"
+                    android:background="@drawable/circle"
+                    android:layout_marginEnd="@dimen/group_items_space_side"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/group_title_margin_top"
+            android:layout_marginBottom="@dimen/group_title_margin_bottom"
+            android:text="@string/group_tile"
+            android:textColor="@color/group_title_text"
+            android:textSize="@dimen/group_title_font"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/design_group_background"
+            android:clipToOutline="true">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/btnPreviewTile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/group_button_height"
+                android:clickable="true"
+                android:foreground="@drawable/design_group_item_effect"
+                android:background="@drawable/list_item_divisor_horizontal_bottom">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:paddingStart="@dimen/group_items_space_side"
+                    android:text="@string/preview"
+                    android:textColor="@color/group_button_text"
+                    android:textSize="@dimen/group_button_font"
+                    android:gravity="center_vertical"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/group_button_height"
+                android:clickable="true"
+                android:background="@drawable/list_item_divisor_horizontal_bottom">
+
+                <Switch
+                    android:id="@+id/switchMinuteHand"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingStart="@dimen/group_items_space_side"
+                    android:paddingEnd="@dimen/group_items_space_side"
+                    android:text="@string/show_minute_hand"
+                    android:textColor="@color/group_button_text"
+                    android:textSize="@dimen/group_button_font"
+                    android:gravity="center_vertical"
+                    android:thumb="@drawable/ui_switch_thumb"
+                    android:track="@drawable/ui_switch_track"
+                    android:foreground="@drawable/design_group_item_effect"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/group_button_height"
+                android:clickable="true">
+
+                <Switch
+                    android:id="@+id/switchLastUpdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingStart="@dimen/group_items_space_side"
+                    android:paddingEnd="@dimen/group_items_space_side"
+                    android:text="@string/show_last_update_time"
+                    android:textColor="@color/group_button_text"
+                    android:textSize="@dimen/group_button_font"
+                    android:gravity="center_vertical"
+                    android:thumb="@drawable/ui_switch_thumb"
+                    android:track="@drawable/ui_switch_track"
+                    android:foreground="@drawable/design_group_item_effect"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/group_title_margin_top"
+            android:layout_marginBottom="@dimen/group_title_margin_bottom"
+            android:text="@string/group_app"
+            android:textColor="@color/group_title_text"
+            android:textSize="@dimen/group_title_font"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/design_group_background"
+            android:clipToOutline="true">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/btnReset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/group_button_height"
+                android:clickable="true"
+                android:foreground="@drawable/design_group_item_effect"
+                android:background="@drawable/list_item_divisor_horizontal_bottom">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:paddingStart="@dimen/group_items_space_side"
+                    android:text="@string/more_reset"
+                    android:textColor="@color/group_button_text"
+                    android:textSize="@dimen/group_button_font"
+                    android:gravity="center_vertical"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/btnCheckUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/group_button_height"
+                android:clickable="true"
+                android:foreground="@drawable/design_group_item_effect"
+                android:background="@drawable/list_item_divisor_horizontal_bottom">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/group_items_space_side"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent">
+
+                    <TextView
+                        android:id="@+id/itemTitle1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/version"
+                        android:textColor="@color/group_button_text"
+                        android:textSize="@dimen/group_button_font"
+                        app:layout_constraintBottom_toTopOf="@id/version"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="HardcodedText,TextContrastCheck" />
+
+                    <TextView
+                        android:id="@+id/version"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="x.x.x"
+                        android:textColor="@color/group_button_sub_text"
+                        android:textSize="@dimen/group_button_sub_font"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/itemTitle1"
+                        tools:ignore="HardcodedText,TextContrastCheck" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/btnGithub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/group_button_height"
+                android:clickable="true"
+                android:foreground="@drawable/design_group_item_effect">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:paddingStart="@dimen/group_items_space_side"
+                    android:text="@string/github"
+                    android:textColor="@color/group_button_text"
+                    android:textSize="@dimen/group_button_font"
+                    android:gravity="center_vertical"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/group_text"
+            android:textSize="@dimen/group_text"
+            android:text="@string/warning_deep_sleep"
+            android:gravity="center"
+            android:padding="@dimen/group_items_space_side"/>
+    </LinearLayout>
+</ScrollView>

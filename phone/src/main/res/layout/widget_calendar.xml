@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:id="@+id/container">
+
+    <ImageView
+        android:id="@+id/calendar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/widget_background_sample"/>
+
+    <AnalogClock
+        android:id="@+id/minute"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dial="@drawable/widget_background_transparent"
+        android:hand_hour="@drawable/hand_transparent"
+        android:hand_minute="@drawable/hand_rounded_1_minute"
+        android:hand_minuteTint="@color/hand_minute"
+        android:hand_minuteTintMode="multiply"/>
+
+    <AnalogClock
+        android:id="@+id/second"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dial="@drawable/widget_background_transparent"
+        android:hand_second="@drawable/hand_rounded_1_second"
+        android:hand_secondTint="@color/hand_second"
+        android:hand_secondTintMode="multiply"
+        android:hand_hour="@drawable/hand_transparent"
+        android:hand_minute="@drawable/hand_transparent"/>
+
+    <AnalogClock
+        android:id="@+id/hour"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dial="@drawable/widget_background_transparent"
+        android:hand_hour="@drawable/hand_rounded_1_hour"
+        android:hand_hourTint="@color/hand_hour"
+        android:hand_hourTintMode="multiply"
+        android:hand_minute="@drawable/hand_transparent"/>
+</FrameLayout>

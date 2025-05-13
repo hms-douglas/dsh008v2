@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_background">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_bar_height"
+        android:fitsSystemWindows="true"
+        app:expanded="false"
+        android:background="@color/activity_background">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/activity_background"
+            app:contentScrim="@color/activity_background"
+            app:layout_scrollFlags="scroll|snap|exitUntilCollapsed">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/tool_bar_height"
+                android:layout_gravity="bottom"
+                android:contentInsetLeft="0dp"
+                android:contentInsetStart="0dp"
+                android:contentInsetRight="0dp"
+                android:contentInsetEnd="0dp"
+                android:paddingTop="@dimen/tool_bar_padding_top"
+                android:paddingEnd="@dimen/tool_bar_padding_right"
+                android:paddingStart="@dimen/tool_bar_padding_right"
+                android:background="@color/activity_background"
+                app:layout_collapseMode="pin"
+                app:contentInsetLeft="0dp"
+                app:contentInsetStart="0dp"
+                app:contentInsetRight="0dp"
+                app:contentInsetEnd="0dp">
+
+                <LinearLayout
+                    android:id="@+id/titleCollapsed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/app_name"
+                        android:textColor="@color/app_bar_font_title"
+                        android:textSize="@dimen/app_bar_font_title_collapsed"
+                        android:textStyle="bold"
+                        android:paddingStart="@dimen/app_bar_title_padding_collapsed"/>
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/btnMore"
+                    android:layout_gravity="end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/activity_background"
+                    android:src="@drawable/icon_tool_bar_more"
+                    android:padding="@dimen/tool_bar_btn_padding"
+                    android:foreground="@drawable/design_btn_floating_effect"
+                    android:contentDescription="@string/tooltip_app_more"
+                    android:longClickable="true"/>
+            </androidx.appcompat.widget.Toolbar>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="@dimen/app_bar_container_height"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/titleExpanded"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/app_bar_title_padding_expanded"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/app_name"
+                        android:gravity="center"
+                        android:textSize="@dimen/app_bar_font_title_expanded"
+                        android:textColor="@color/app_bar_font_title"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/content_padding"
+        android:gravity="center"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <FrameLayout
+            android:id="@+id/previewContainer"
+            android:layout_width="@dimen/preview"
+            android:layout_height="@dimen/preview"
+            android:background="@drawable/design_preview_background"
+            android:layout_marginBottom="@dimen/preview_space"
+            android:padding="@dimen/preview_padding"/>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/design_content_background"
+            android:clipToOutline="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/design_group_background"
+                    android:clipToOutline="true">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/btnBackgroundColor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="@dimen/group_button_height"
+                        android:clickable="true"
+                        android:foreground="@drawable/design_group_item_effect"
+                        android:background="@drawable/list_item_divisor_horizontal_bottom">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:paddingStart="@dimen/group_items_space_side"
+                            android:text="@string/background_color"
+                            android:textColor="@color/group_button_text"
+                            android:textSize="@dimen/group_button_font"
+                            android:gravity="center_vertical"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toStartOf="@id/btnBackgroundColorColor"/>
+
+                        <ImageView
+                            android:id="@+id/btnBackgroundColorColor"
+                            android:layout_width="@dimen/group_button_color_icon"
+                            android:layout_height="@dimen/group_button_color_icon"
+                            android:src="@drawable/circle"
+                            android:layout_marginEnd="@dimen/group_items_space_side"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"/>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/btnEventColors"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="@dimen/group_button_height"
+                        android:clickable="true"
+                        android:foreground="@drawable/design_group_item_effect"
+                        android:background="@drawable/list_item_divisor_horizontal_bottom">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:paddingStart="@dimen/group_items_space_side"
+                            android:text="@string/event_colors"
+                            android:textColor="@color/group_button_text"
+                            android:textSize="@dimen/group_button_font"
+                            android:gravity="center_vertical"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toStartOf="@id/btnEventColorsColor"/>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/btnEventColorsColor"
+                            android:layout_width="@dimen/group_button_color_icon"
+                            android:layout_height="@dimen/group_button_color_icon"
+                            android:background="@drawable/color_wheel"
+                            android:layout_marginEnd="@dimen/group_items_space_side"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"/>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="@dimen/group_button_height"
+                        android:clickable="true"
+                        android:background="@drawable/list_item_divisor_horizontal_bottom">
+
+                        <Switch
+                            android:id="@+id/switchAllDay"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:paddingStart="@dimen/group_items_space_side"
+                            android:paddingEnd="@dimen/group_items_space_side"
+                            android:text="@string/show_all_day_events"
+                            android:textColor="@color/group_button_text"
+                            android:textSize="@dimen/group_button_font"
+                            android:gravity="center_vertical"
+                            android:thumb="@drawable/ui_switch_thumb"
+                            android:track="@drawable/ui_switch_track"
+                            android:foreground="@drawable/design_group_item_effect"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            tools:ignore="UseSwitchCompatOrMaterialXml" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="@dimen/group_button_height"
+                        android:clickable="true"
+                        android:background="@drawable/list_item_divisor_horizontal_bottom">
+
+                        <Switch
+                            android:id="@+id/switchRoundedCorners"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:paddingStart="@dimen/group_items_space_side"
+                            android:paddingEnd="@dimen/group_items_space_side"
+                            android:text="@string/show_rounded_corners"
+                            android:textColor="@color/group_button_text"
+                            android:textSize="@dimen/group_button_font"
+                            android:gravity="center_vertical"
+                            android:thumb="@drawable/ui_switch_thumb"
+                            android:track="@drawable/ui_switch_track"
+                            android:foreground="@drawable/design_group_item_effect"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            tools:ignore="UseSwitchCompatOrMaterialXml" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="@dimen/group_button_height"
+                        android:clickable="true"
+                        android:background="@drawable/list_item_divisor_horizontal_bottom">
+
+                        <Switch
+                            android:id="@+id/switchBorderOnly"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:paddingStart="@dimen/group_items_space_side"
+                            android:paddingEnd="@dimen/group_items_space_side"
+                            android:text="@string/show_border_only"
+                            android:textColor="@color/group_button_text"
+                            android:textSize="@dimen/group_button_font"
+                            android:gravity="center_vertical"
+                            android:thumb="@drawable/ui_switch_thumb"
+                            android:track="@drawable/ui_switch_track"
+                            android:foreground="@drawable/design_group_item_effect"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            tools:ignore="UseSwitchCompatOrMaterialXml" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="@dimen/group_button_height"
+                        android:clickable="true"
+                        android:background="@drawable/list_item_divisor_horizontal_bottom">
+
+                        <Switch
+                            android:id="@+id/switchHiddenNumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:paddingStart="@dimen/group_items_space_side"
+                            android:paddingEnd="@dimen/group_items_space_side"
+                            android:text="@string/show_hidden_events_number"
+                            android:textColor="@color/group_button_text"
+                            android:textSize="@dimen/group_button_font"
+                            android:gravity="center_vertical"
+                            android:thumb="@drawable/ui_switch_thumb"
+                            android:track="@drawable/ui_switch_track"
+                            android:foreground="@drawable/design_group_item_effect"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            tools:ignore="UseSwitchCompatOrMaterialXml" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="@dimen/group_button_height"
+                        android:clickable="true"
+                        android:background="@drawable/list_item_divisor_horizontal_bottom">
+
+                        <Switch
+                            android:id="@+id/switchForceUppercase"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:paddingStart="@dimen/group_items_space_side"
+                            android:paddingEnd="@dimen/group_items_space_side"
+                            android:text="@string/force_uppercase"
+                            android:textColor="@color/group_button_text"
+                            android:textSize="@dimen/group_button_font"
+                            android:gravity="center_vertical"
+                            android:thumb="@drawable/ui_switch_thumb"
+                            android:track="@drawable/ui_switch_track"
+                            android:foreground="@drawable/design_group_item_effect"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            tools:ignore="UseSwitchCompatOrMaterialXml" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/btnInfoColor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="@dimen/group_button_height"
+                        android:clickable="true"
+                        android:foreground="@drawable/design_group_item_effect">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:paddingStart="@dimen/group_items_space_side"
+                            android:paddingEnd="@dimen/group_items_space_side"
+                            android:text="@string/events_info_color"
+                            android:textColor="@color/group_button_text"
+                            android:textSize="@dimen/group_button_font"
+                            android:gravity="center_vertical"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toStartOf="@id/btnInfoColorColor"/>
+
+                        <ImageView
+                            android:id="@+id/btnInfoColorColor"
+                            android:layout_width="@dimen/group_button_color_icon"
+                            android:layout_height="@dimen/group_button_color_icon"
+                            android:src="@drawable/circle"
+                            android:layout_marginEnd="@dimen/group_items_space_side"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"/>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/design_group_background"
+                    android:clipToOutline="true"
+                    android:layout_marginTop="@dimen/group_space_between">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/btnHandStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="@dimen/group_button_height"
+                        android:clickable="true"
+                        android:foreground="@drawable/design_group_item_effect"
+                        android:background="@drawable/list_item_divisor_horizontal_bottom">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:paddingStart="@dimen/group_items_space_side"
+                            android:text="@string/hand_style"
+                            android:textColor="@color/group_button_text"
+                            android:textSize="@dimen/group_button_font"
+                            android:gravity="center_vertical"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"/>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="@dimen/group_button_height"
+                        android:clickable="true"
+                        android:background="@drawable/list_item_divisor_horizontal_bottom">
+
+                        <Switch
+                            android:id="@+id/switchShowSecond"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:paddingStart="@dimen/group_items_space_side"
+                            android:paddingEnd="@dimen/group_items_space_side"
+                            android:text="@string/show_second"
+                            android:textColor="@color/group_button_text"
+                            android:textSize="@dimen/group_button_font"
+                            android:gravity="center_vertical"
+                            android:thumb="@drawable/ui_switch_thumb"
+                            android:track="@drawable/ui_switch_track"
+                            android:foreground="@drawable/design_group_item_effect"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            tools:ignore="UseSwitchCompatOrMaterialXml" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/btnHourColor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="@dimen/group_button_height"
+                        android:clickable="true"
+                        android:foreground="@drawable/design_group_item_effect"
+                        android:background="@drawable/list_item_divisor_horizontal_bottom">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:paddingStart="@dimen/group_items_space_side"
+                            android:paddingEnd="@dimen/group_items_space_side"
+                            android:text="@string/hour_color"
+                            android:textColor="@color/group_button_text"
+                            android:textSize="@dimen/group_button_font"
+                            android:gravity="center_vertical"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toStartOf="@id/btnHourColorColor"/>
+
+                        <ImageView
+                            android:id="@+id/btnHourColorColor"
+                            android:layout_width="@dimen/group_button_color_icon"
+                            android:layout_height="@dimen/group_button_color_icon"
+                            android:src="@drawable/circle"
+                            android:layout_marginEnd="@dimen/group_items_space_side"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"/>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/btnMinuteColor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="@dimen/group_button_height"
+                        android:clickable="true"
+                        android:foreground="@drawable/design_group_item_effect"
+                        android:background="@drawable/list_item_divisor_horizontal_bottom">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:paddingStart="@dimen/group_items_space_side"
+                            android:paddingEnd="@dimen/group_items_space_side"
+                            android:text="@string/minute_color"
+                            android:textColor="@color/group_button_text"
+                            android:textSize="@dimen/group_button_font"
+                            android:gravity="center_vertical"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toStartOf="@id/btnMinuteColorColor"/>
+
+                        <ImageView
+                            android:id="@+id/btnMinuteColorColor"
+                            android:layout_width="@dimen/group_button_color_icon"
+                            android:layout_height="@dimen/group_button_color_icon"
+                            android:src="@drawable/circle"
+                            android:layout_marginEnd="@dimen/group_items_space_side"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"/>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/btnSecondColor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="@dimen/group_button_height"
+                        android:clickable="true"
+                        android:foreground="@drawable/design_group_item_effect">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:paddingStart="@dimen/group_items_space_side"
+                            android:paddingEnd="@dimen/group_items_space_side"
+                            android:text="@string/second_color"
+                            android:textColor="@color/group_button_text"
+                            android:textSize="@dimen/group_button_font"
+                            android:gravity="center_vertical"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toStartOf="@id/btnSecondColorColor"/>
+
+                        <ImageView
+                            android:id="@+id/btnSecondColorColor"
+                            android:layout_width="@dimen/group_button_color_icon"
+                            android:layout_height="@dimen/group_button_color_icon"
+                            android:src="@drawable/circle"
+                            android:layout_marginEnd="@dimen/group_items_space_side"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"/>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

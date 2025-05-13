@@ -1,0 +1,803 @@
+<WatchFace width="450" height="450">
+    <Metadata key="CLOCK_TYPE" value="ANALOG"/>
+    <Metadata key="PREVIEW_TIME" value="10:08:32"/>
+
+    <UserConfigurations>
+        <ListConfiguration id="handStyle" displayName="configuration_hand_style" defaultValue="0">
+            <ListOption id="0" displayName="configuration_hand_style_rounded_1" icon="configuration_hand_style_rounded_1"/>
+            <ListOption id="1" displayName="configuration_hand_style_rounded_1_no_second" icon="configuration_hand_style_rounded_1_no_second"/>
+            <ListOption id="2" displayName="configuration_hand_style_rounded_2" icon="configuration_hand_style_rounded_2"/>
+            <ListOption id="3" displayName="configuration_hand_style_rounded_2_no_second" icon="configuration_hand_style_rounded_2_no_second"/>
+            <ListOption id="4" displayName="configuration_hand_style_rounded_3" icon="configuration_hand_style_rounded_3"/>
+            <ListOption id="5" displayName="configuration_hand_style_rounded_3_no_second" icon="configuration_hand_style_rounded_3_no_second"/>
+            <ListOption id="6" displayName="configuration_hand_style_squared_1" icon="configuration_hand_style_squared_1"/>
+            <ListOption id="7" displayName="configuration_hand_style_squared_1_no_second" icon="configuration_hand_style_squared_1_no_second"/>
+            <ListOption id="8" displayName="configuration_hand_style_squared_2" icon="configuration_hand_style_squared_2"/>
+            <ListOption id="9" displayName="configuration_hand_style_squared_2_no_second" icon="configuration_hand_style_squared_2_no_second"/>
+            <ListOption id="10" displayName="configuration_hand_style_other_1" icon="configuration_hand_style_other_1"/>
+            <ListOption id="11" displayName="configuration_hand_style_other_1_no_second" icon="configuration_hand_style_other_1_no_second"/>
+            <ListOption id="12" displayName="configuration_hand_style_digital_1" icon="configuration_hand_style_digital_1"/>
+            <ListOption id="13" displayName="configuration_hand_style_digital_1_no_minute" icon="configuration_hand_style_digital_1_no_minute"/>
+        </ListConfiguration>
+
+        <ColorConfiguration id="hourHandColor" displayName="configuration_hand_hour_color" defaultValue="24">
+            <!-- HAND_HOUR | TEXT_IN_HOUR -->
+            <ColorOption id="0" displayName="configuration_generic_color" colors="#fbd75b #000000" />
+            <ColorOption id="1" displayName="configuration_generic_color" colors="#ffca3a #000000" />
+            <ColorOption id="2" displayName="configuration_generic_color" colors="#e4ff1a #000000" />
+            <ColorOption id="3" displayName="configuration_generic_color" colors="#8ac926 #000000" />
+            <ColorOption id="4" displayName="configuration_generic_color" colors="#669816 #000000" />
+            <ColorOption id="5" displayName="configuration_generic_color" colors="#6eeb83 #000000" />
+            <ColorOption id="6" displayName="configuration_generic_color" colors="#8F9239 #000000" />
+            <ColorOption id="7" displayName="configuration_generic_color" colors="#755d42 #ffffff" />
+            <ColorOption id="8" displayName="configuration_generic_color" colors="#8ecae6 #000000" />
+            <ColorOption id="9" displayName="configuration_generic_color" colors="#219ebc #000000" />
+            <ColorOption id="10" displayName="configuration_generic_color" colors="#2B53A4 #ffffff" />
+            <ColorOption id="11" displayName="configuration_generic_color" colors="#2B82A4 #000000" />
+            <ColorOption id="12" displayName="configuration_generic_color" colors="#2b6fa4 #ffffff" />
+            <ColorOption id="13" displayName="configuration_generic_color" colors="#ff595e #000000" />
+            <ColorOption id="14" displayName="configuration_generic_color" colors="#BD3636 #ffffff" />
+            <ColorOption id="15" displayName="configuration_generic_color" colors="#B53769 #ffffff" />
+            <ColorOption id="16" displayName="configuration_generic_color" colors="#FF74B5 #000000" />
+            <ColorOption id="17" displayName="configuration_generic_color" colors="#92489F #ffffff" />
+            <ColorOption id="18" displayName="configuration_generic_color" colors="#65457F #ffffff" />
+            <ColorOption id="19" displayName="configuration_generic_color" colors="#39928d #000000" />
+            <ColorOption id="20" displayName="configuration_generic_color" colors="#399268 #000000" />
+            <ColorOption id="21" displayName="configuration_generic_color" colors="#549239 #000000" />
+            <ColorOption id="22" displayName="configuration_generic_color" colors="#fcf6bd #000000" />
+            <ColorOption id="23" displayName="configuration_generic_color" colors="#d0f4de #000000" />
+            <ColorOption id="24" displayName="configuration_generic_color" colors="#ebebeb #000000" />
+            <ColorOption id="25" displayName="configuration_generic_color" colors="#ffffff #000000" />
+            <ColorOption id="26" displayName="configuration_generic_color" colors="#9a9a9a #000000" />
+        </ColorConfiguration>
+
+        <ColorConfiguration id="minuteHandColor" displayName="configuration_hand_minute_color" defaultValue="0">
+            <!-- HAND_MINUTE -->
+            <ColorOption id="0" displayName="configuration_generic_color" colors="#fbd75b" />
+            <ColorOption id="1" displayName="configuration_generic_color" colors="#ffca3a" />
+            <ColorOption id="2" displayName="configuration_generic_color" colors="#e4ff1a" />
+            <ColorOption id="3" displayName="configuration_generic_color" colors="#8ac926" />
+            <ColorOption id="4" displayName="configuration_generic_color" colors="#669816" />
+            <ColorOption id="5" displayName="configuration_generic_color" colors="#6eeb83" />
+            <ColorOption id="6" displayName="configuration_generic_color" colors="#8F9239" />
+            <ColorOption id="7" displayName="configuration_generic_color" colors="#755d42" />
+            <ColorOption id="8" displayName="configuration_generic_color" colors="#8ecae6" />
+            <ColorOption id="9" displayName="configuration_generic_color" colors="#219ebc" />
+            <ColorOption id="10" displayName="configuration_generic_color" colors="#2B53A4" />
+            <ColorOption id="11" displayName="configuration_generic_color" colors="#2B82A4" />
+            <ColorOption id="12" displayName="configuration_generic_color" colors="#2b6fa4" />
+            <ColorOption id="13" displayName="configuration_generic_color" colors="#ff595e" />
+            <ColorOption id="14" displayName="configuration_generic_color" colors="#BD3636" />
+            <ColorOption id="15" displayName="configuration_generic_color" colors="#B53769" />
+            <ColorOption id="16" displayName="configuration_generic_color" colors="#FF74B5" />
+            <ColorOption id="17" displayName="configuration_generic_color" colors="#92489F" />
+            <ColorOption id="18" displayName="configuration_generic_color" colors="#65457F" />
+            <ColorOption id="19" displayName="configuration_generic_color" colors="#39928d" />
+            <ColorOption id="20" displayName="configuration_generic_color" colors="#399268" />
+            <ColorOption id="21" displayName="configuration_generic_color" colors="#549239" />
+            <ColorOption id="22" displayName="configuration_generic_color" colors="#fcf6bd" />
+            <ColorOption id="23" displayName="configuration_generic_color" colors="#d0f4de" />
+            <ColorOption id="24" displayName="configuration_generic_color" colors="#ebebeb" />
+            <ColorOption id="25" displayName="configuration_generic_color" colors="#ffffff" />
+            <ColorOption id="26" displayName="configuration_generic_color" colors="#9a9a9a" />
+        </ColorConfiguration>
+
+        <ColorConfiguration id="secondHandColor" displayName="configuration_hand_second_color" defaultValue="26">
+            <!-- HAND_SECOND -->
+            <ColorOption id="0" displayName="configuration_generic_color" colors="#fbd75b" />
+            <ColorOption id="1" displayName="configuration_generic_color" colors="#ffca3a" />
+            <ColorOption id="2" displayName="configuration_generic_color" colors="#e4ff1a" />
+            <ColorOption id="3" displayName="configuration_generic_color" colors="#8ac926" />
+            <ColorOption id="4" displayName="configuration_generic_color" colors="#669816" />
+            <ColorOption id="5" displayName="configuration_generic_color" colors="#6eeb83" />
+            <ColorOption id="6" displayName="configuration_generic_color" colors="#8F9239" />
+            <ColorOption id="7" displayName="configuration_generic_color" colors="#755d42" />
+            <ColorOption id="8" displayName="configuration_generic_color" colors="#8ecae6" />
+            <ColorOption id="9" displayName="configuration_generic_color" colors="#219ebc" />
+            <ColorOption id="10" displayName="configuration_generic_color" colors="#2B53A4" />
+            <ColorOption id="11" displayName="configuration_generic_color" colors="#2B82A4" />
+            <ColorOption id="12" displayName="configuration_generic_color" colors="#2b6fa4" />
+            <ColorOption id="13" displayName="configuration_generic_color" colors="#ff595e" />
+            <ColorOption id="14" displayName="configuration_generic_color" colors="#BD3636" />
+            <ColorOption id="15" displayName="configuration_generic_color" colors="#B53769" />
+            <ColorOption id="16" displayName="configuration_generic_color" colors="#FF74B5" />
+            <ColorOption id="17" displayName="configuration_generic_color" colors="#92489F" />
+            <ColorOption id="18" displayName="configuration_generic_color" colors="#65457F" />
+            <ColorOption id="19" displayName="configuration_generic_color" colors="#39928d" />
+            <ColorOption id="20" displayName="configuration_generic_color" colors="#399268" />
+            <ColorOption id="21" displayName="configuration_generic_color" colors="#549239" />
+            <ColorOption id="22" displayName="configuration_generic_color" colors="#fcf6bd" />
+            <ColorOption id="23" displayName="configuration_generic_color" colors="#d0f4de" />
+            <ColorOption id="24" displayName="configuration_generic_color" colors="#ebebeb" />
+            <ColorOption id="25" displayName="configuration_generic_color" colors="#ffffff" />
+            <ColorOption id="26" displayName="configuration_generic_color" colors="#9a9a9a" />
+        </ColorConfiguration>
+
+          <ColorConfiguration id="complicationBackgroundColor" displayName="configuration_complications_background_color" defaultValue="27">
+            <!-- COMPLICATION_BACKGROUND -->
+            <ColorOption id="0" displayName="configuration_generic_color" colors="#fbd75b" />
+            <ColorOption id="1" displayName="configuration_generic_color" colors="#ffca3a" />
+            <ColorOption id="2" displayName="configuration_generic_color" colors="#e4ff1a" />
+            <ColorOption id="3" displayName="configuration_generic_color" colors="#8ac926" />
+            <ColorOption id="4" displayName="configuration_generic_color" colors="#669816" />
+            <ColorOption id="5" displayName="configuration_generic_color" colors="#6eeb83" />
+            <ColorOption id="6" displayName="configuration_generic_color" colors="#8F9239" />
+            <ColorOption id="7" displayName="configuration_generic_color" colors="#755d42" />
+            <ColorOption id="8" displayName="configuration_generic_color" colors="#8ecae6" />
+            <ColorOption id="9" displayName="configuration_generic_color" colors="#219ebc" />
+            <ColorOption id="10" displayName="configuration_generic_color" colors="#2B53A4" />
+            <ColorOption id="11" displayName="configuration_generic_color" colors="#2B82A4" />
+            <ColorOption id="12" displayName="configuration_generic_color" colors="#2b6fa4" />
+            <ColorOption id="13" displayName="configuration_generic_color" colors="#ff595e" />
+            <ColorOption id="14" displayName="configuration_generic_color" colors="#BD3636" />
+            <ColorOption id="15" displayName="configuration_generic_color" colors="#B53769" />
+            <ColorOption id="16" displayName="configuration_generic_color" colors="#FF74B5" />
+            <ColorOption id="17" displayName="configuration_generic_color" colors="#92489F" />
+            <ColorOption id="18" displayName="configuration_generic_color" colors="#65457F" />
+            <ColorOption id="19" displayName="configuration_generic_color" colors="#39928d" />
+            <ColorOption id="20" displayName="configuration_generic_color" colors="#399268" />
+            <ColorOption id="21" displayName="configuration_generic_color" colors="#549239" />
+            <ColorOption id="22" displayName="configuration_generic_color" colors="#fcf6bd" />
+            <ColorOption id="23" displayName="configuration_generic_color" colors="#d0f4de" />
+            <ColorOption id="24" displayName="configuration_generic_color" colors="#ebebeb" />
+            <ColorOption id="25" displayName="configuration_generic_color" colors="#ffffff" />
+            <ColorOption id="26" displayName="configuration_generic_color" colors="#9a9a9a" />
+            <ColorOption id="27" displayName="configuration_generic_color" colors="#373737" />
+            <ColorOption id="28" displayName="configuration_generic_color" colors="#000000" />
+            <ColorOption id="29" displayName="configuration_generic_color" colors="#00091E"/>
+            <ColorOption id="30" displayName="configuration_generic_color" colors="#0F001E"/>
+            <ColorOption id="31" displayName="configuration_generic_color" colors="#1E0004"/>
+            <ColorOption id="32" displayName="configuration_generic_color" colors="#00151E"/>
+            <ColorOption id="33" displayName="configuration_generic_color" colors="#001210"/>
+            <ColorOption id="34" displayName="configuration_generic_color" colors="#001205"/>
+            <ColorOption id="35" displayName="configuration_generic_color" colors="#0F1200"/>
+            <ColorOption id="36" displayName="configuration_generic_color" colors="#120900"/>
+            <ColorOption id="37" displayName="configuration_generic_color" colors="#1b1b1b" />
+            <ColorOption id="38" displayName="configuration_generic_color" colors="#2c332b" />
+            <ColorOption id="39" displayName="configuration_generic_color" colors="#1c1e2c" />
+        </ColorConfiguration>
+
+        <ColorConfiguration id="complicationMainColor" displayName="configuration_complications_main_color" defaultValue="0">
+            <!-- COMPLICATION_RANGE_AND_ICON -->
+            <ColorOption id="0" displayName="configuration_generic_color" colors="#fbd75b" />
+            <ColorOption id="1" displayName="configuration_generic_color" colors="#ffca3a" />
+            <ColorOption id="2" displayName="configuration_generic_color" colors="#e4ff1a" />
+            <ColorOption id="3" displayName="configuration_generic_color" colors="#8ac926" />
+            <ColorOption id="4" displayName="configuration_generic_color" colors="#669816" />
+            <ColorOption id="5" displayName="configuration_generic_color" colors="#6eeb83" />
+            <ColorOption id="6" displayName="configuration_generic_color" colors="#8F9239" />
+            <ColorOption id="7" displayName="configuration_generic_color" colors="#755d42" />
+            <ColorOption id="8" displayName="configuration_generic_color" colors="#8ecae6" />
+            <ColorOption id="9" displayName="configuration_generic_color" colors="#219ebc" />
+            <ColorOption id="10" displayName="configuration_generic_color" colors="#2B53A4" />
+            <ColorOption id="11" displayName="configuration_generic_color" colors="#2B82A4" />
+            <ColorOption id="12" displayName="configuration_generic_color" colors="#2b6fa4" />
+            <ColorOption id="13" displayName="configuration_generic_color" colors="#ff595e" />
+            <ColorOption id="14" displayName="configuration_generic_color" colors="#BD3636" />
+            <ColorOption id="15" displayName="configuration_generic_color" colors="#B53769" />
+            <ColorOption id="16" displayName="configuration_generic_color" colors="#FF74B5" />
+            <ColorOption id="17" displayName="configuration_generic_color" colors="#92489F" />
+            <ColorOption id="18" displayName="configuration_generic_color" colors="#65457F" />
+            <ColorOption id="19" displayName="configuration_generic_color" colors="#39928d" />
+            <ColorOption id="20" displayName="configuration_generic_color" colors="#399268" />
+            <ColorOption id="21" displayName="configuration_generic_color" colors="#549239" />
+            <ColorOption id="22" displayName="configuration_generic_color" colors="#fcf6bd" />
+            <ColorOption id="23" displayName="configuration_generic_color" colors="#d0f4de" />
+            <ColorOption id="24" displayName="configuration_generic_color" colors="#ebebeb" />
+            <ColorOption id="25" displayName="configuration_generic_color" colors="#ffffff" />
+            <ColorOption id="26" displayName="configuration_generic_color" colors="#9a9a9a" />
+            <ColorOption id="27" displayName="configuration_generic_color" colors="#373737" />
+            <ColorOption id="28" displayName="configuration_generic_color" colors="#000000" />
+        </ColorConfiguration>
+
+        <ColorConfiguration id="complicationTextColor" displayName="configuration_complications_text_color" defaultValue="24">
+            <!-- COMPLICATION_TEXT -->
+            <ColorOption id="0" displayName="configuration_generic_color" colors="#FBD75B" />
+            <ColorOption id="1" displayName="configuration_generic_color" colors="#ffca3a" />
+            <ColorOption id="2" displayName="configuration_generic_color" colors="#e4ff1a" />
+            <ColorOption id="3" displayName="configuration_generic_color" colors="#8ac926" />
+            <ColorOption id="4" displayName="configuration_generic_color" colors="#669816" />
+            <ColorOption id="5" displayName="configuration_generic_color" colors="#6eeb83" />
+            <ColorOption id="6" displayName="configuration_generic_color" colors="#8F9239" />
+            <ColorOption id="7" displayName="configuration_generic_color" colors="#755d42" />
+            <ColorOption id="8" displayName="configuration_generic_color" colors="#8ecae6" />
+            <ColorOption id="9" displayName="configuration_generic_color" colors="#219ebc" />
+            <ColorOption id="10" displayName="configuration_generic_color" colors="#2B53A4" />
+            <ColorOption id="11" displayName="configuration_generic_color" colors="#2B82A4" />
+            <ColorOption id="12" displayName="configuration_generic_color" colors="#2b6fa4" />
+            <ColorOption id="13" displayName="configuration_generic_color" colors="#ff595e" />
+            <ColorOption id="14" displayName="configuration_generic_color" colors="#BD3636" />
+            <ColorOption id="15" displayName="configuration_generic_color" colors="#B53769" />
+            <ColorOption id="16" displayName="configuration_generic_color" colors="#FF74B5" />
+            <ColorOption id="17" displayName="configuration_generic_color" colors="#92489F" />
+            <ColorOption id="18" displayName="configuration_generic_color" colors="#65457F" />
+            <ColorOption id="19" displayName="configuration_generic_color" colors="#39928d" />
+            <ColorOption id="20" displayName="configuration_generic_color" colors="#399268" />
+            <ColorOption id="21" displayName="configuration_generic_color" colors="#549239" />
+            <ColorOption id="22" displayName="configuration_generic_color" colors="#fcf6bd" />
+            <ColorOption id="23" displayName="configuration_generic_color" colors="#d0f4de" />
+            <ColorOption id="24" displayName="configuration_generic_color" colors="#ebebeb" />
+            <ColorOption id="25" displayName="configuration_generic_color" colors="#ffffff" />
+            <ColorOption id="26" displayName="configuration_generic_color" colors="#9a9a9a" />
+            <ColorOption id="27" displayName="configuration_generic_color" colors="#373737" />
+            <ColorOption id="28" displayName="configuration_generic_color" colors="#000000" />
+        </ColorConfiguration>
+    </UserConfigurations>
+
+    <Scene backgroundColor="#000000">
+        <!-- Calendar complication slot -->
+        <ComplicationSlot
+            x="0" y="0"
+            width="450" height="450"
+            slotId="0"
+            isCustomizable="FALSE"
+            supportedTypes="PHOTO_IMAGE">
+
+            <DefaultProviderPolicy
+                primaryProvider="dev.dect.wear.watchface.dsh008.v2/dev.dect.wear.watchface.dsh008.v2.complication.CalendarComplication"
+                primaryProviderType="PHOTO_IMAGE"
+                defaultSystemProvider="EMPTY"
+                defaultSystemProviderType="PHOTO_IMAGE"/>
+
+            <BoundingOval x="0" y="0" width="450" height="450"/>
+
+            <Complication type="PHOTO_IMAGE">
+                <PartImage x="0" y="0" height="450" width="450">
+                    <Image resource="[COMPLICATION.PHOTO_IMAGE]"/>
+                </PartImage>
+             </Complication>
+        </ComplicationSlot>
+
+        <!-- Left complication slot -->
+        <ComplicationSlot
+            x="97" y="180"
+            width="90" height="90"
+            slotId="1"
+            isCustomizable="TRUE"
+            supportedTypes="RANGED_VALUE SHORT_TEXT PHOTO_IMAGE SMALL_IMAGE">
+
+            <DefaultProviderPolicy
+                defaultSystemProvider="EMPTY"
+                defaultSystemProviderType="RANGED_VALUE"/>
+
+            <BoundingOval x="0" y="0" width="90" height="90"/>
+
+            <Complication type="RANGED_VALUE">
+                <!-- Background circle -->
+                <PartDraw x="0" y="0" width="90" height="90">
+                    <Ellipse x="0" y="0" width="90" height="90">
+                        <Fill color="[CONFIGURATION.complicationBackgroundColor]"/>
+                    </Ellipse>
+                </PartDraw>
+
+                <!-- Range -->
+                <PartDraw x="0" y="0" height="90" width="90" >
+                    <Arc direction="CLOCKWISE" startAngle="0" endAngle="0" centerX="45" centerY="45" width="76" height="76">
+                        <Transform target="endAngle" value="((clamp(([COMPLICATION.RANGED_VALUE_VALUE]), ([COMPLICATION.RANGED_VALUE_MIN]), ([COMPLICATION.RANGED_VALUE_MAX])) - ([COMPLICATION.RANGED_VALUE_MIN])) / (([COMPLICATION.RANGED_VALUE_MAX]) - ([COMPLICATION.RANGED_VALUE_MIN]))) * (360))" />
+                        <Stroke color="[CONFIGURATION.complicationMainColor]" cap="BUTT" thickness="5" />
+                    </Arc>
+                </PartDraw>
+
+                <!-- Icon -->
+                <PartImage x="32" y="19" width="26" height="26" tintColor="[CONFIGURATION.complicationMainColor]">
+                    <Image resource="[COMPLICATION.MONOCHROMATIC_IMAGE]" />
+                </PartImage>
+
+                <!-- Font / Text -->
+                <Group name="fontTextComplication" x="0" y="0" width="450" height="450">
+                    <PartText x="20" y="50" width="50" height="20">
+                        <Text align="CENTER" ellipsis="TRUE" maxLines="1">
+                            <Font family="SYNC_TO_DEVICE" size="18" weight="MEDIUM" slant="NORMAL" color="[CONFIGURATION.complicationTextColor]">
+                                <Template>%s<Parameter expression="[COMPLICATION.TEXT]"/></Template>
+                            </Font>
+                        </Text>
+                    </PartText>
+                </Group>
+            </Complication>
+
+            <Complication type="SHORT_TEXT">
+                <!-- Background circle -->
+                <PartDraw x="0" y="0" width="90" height="90">
+                    <Ellipse x="0" y="0" width="90" height="90">
+                        <Fill color="[CONFIGURATION.complicationBackgroundColor]"/>
+                    </Ellipse>
+                </PartDraw>
+
+                <!-- Icon -->
+                <PartImage x="32" y="19" width="26" height="26" tintColor="[CONFIGURATION.complicationMainColor]">
+                    <Image resource="[COMPLICATION.MONOCHROMATIC_IMAGE]" />
+                </PartImage>
+
+                <!-- Font / Text -->
+                <Group name="fontTextComplication"  x="0" y="0" width="450" height="450">
+                    <PartText x="10" y="50" width="70" height="20">
+                        <Text align="CENTER" ellipsis="TRUE" maxLines="1">
+                            <Font family="SYNC_TO_DEVICE" size="18" weight="MEDIUM" slant="NORMAL" color="[CONFIGURATION.complicationTextColor]">
+                                <Template>%s<Parameter expression="[COMPLICATION.TEXT]"/></Template>
+                            </Font>
+                        </Text>
+                    </PartText>
+                </Group>
+            </Complication>
+
+            <Complication type="PHOTO_IMAGE">
+                <PartImage x="0" y="0" height="90" width="90">
+                    <Image resource="[COMPLICATION.PHOTO_IMAGE]"/>
+                </PartImage>
+            </Complication>
+
+            <Complication type="SMALL_IMAGE">
+                <Condition>
+                    <Expressions>
+                        <!-- Check if it is an icon or a photo -->
+                        <Expression name="icon">
+                            <![CDATA[[COMPLICATION.SMALL_IMAGE] != null && [COMPLICATION.IMAGE_STYLE] == 2]]>
+                        </Expression>
+                        <Expression name="photo">
+                            <![CDATA[[COMPLICATION.SMALL_IMAGE] != null && [COMPLICATION.IMAGE_STYLE] == 1]]>
+                        </Expression>
+                    </Expressions>
+
+                    <!-- If it is an icon -->
+                    <Compare expression="icon">
+                        <!-- Background circle -->
+                        <PartDraw x="0" y="0" width="90" height="90">
+                            <Ellipse x="0" y="0" width="90" height="90">
+                                <Fill color="[CONFIGURATION.complicationBackgroundColor]"/>
+                            </Ellipse>
+                        </PartDraw>
+
+                        <!-- Icon -->
+                        <PartImage x="20" y="20" width="50" height="50" tintColor="[CONFIGURATION.complicationMainColor]">
+                            <Image resource="[COMPLICATION.SMALL_IMAGE]" />
+                        </PartImage>
+                    </Compare>
+
+                    <!-- If it is a photo -->
+                    <Compare expression="photo">
+                        <PartImage x="0" y="0" width="90" height="90">
+                            <Image resource="[COMPLICATION.SMALL_IMAGE]" />
+                        </PartImage>
+                    </Compare>
+                </Condition>
+            </Complication>
+        </ComplicationSlot>
+
+        <!-- Right complication slot -->
+        <ComplicationSlot
+            x="263" y="180"
+            width="90" height="90"
+            slotId="2"
+            isCustomizable="TRUE"
+            supportedTypes="RANGED_VALUE SHORT_TEXT PHOTO_IMAGE SMALL_IMAGE">
+
+            <DefaultProviderPolicy
+                defaultSystemProvider="EMPTY"
+                defaultSystemProviderType="SHORT_TEXT"/>
+
+            <BoundingOval x="0" y="0" width="90" height="90"/>
+
+            <Complication type="RANGED_VALUE">
+                <!-- Background circle -->
+                <PartDraw x="0" y="0" width="90" height="90">
+                    <Ellipse x="0" y="0" width="90" height="90">
+                        <Fill color="[CONFIGURATION.complicationBackgroundColor]"/>
+                    </Ellipse>
+                </PartDraw>
+
+                <!-- Range -->
+                <PartDraw x="0" y="0" height="90" width="90" >
+                    <Arc direction="CLOCKWISE" startAngle="0" endAngle="0" centerX="45" centerY="45" width="76" height="76">
+                        <Transform target="endAngle" value="((clamp(([COMPLICATION.RANGED_VALUE_VALUE]), ([COMPLICATION.RANGED_VALUE_MIN]), ([COMPLICATION.RANGED_VALUE_MAX])) - ([COMPLICATION.RANGED_VALUE_MIN])) / (([COMPLICATION.RANGED_VALUE_MAX]) - ([COMPLICATION.RANGED_VALUE_MIN]))) * (360))" />
+                        <Stroke color="[CONFIGURATION.complicationMainColor]" cap="BUTT" thickness="5" />
+                    </Arc>
+                </PartDraw>
+
+                <!-- Icon -->
+                <PartImage x="32" y="19" width="26" height="26" tintColor="[CONFIGURATION.complicationMainColor]">
+                    <Image resource="[COMPLICATION.MONOCHROMATIC_IMAGE]" />
+                </PartImage>
+
+                <!-- Font / Text -->
+                <Group name="fontTextComplication"  x="0" y="0" width="450" height="450">
+                    <PartText x="20" y="50" width="50" height="20">
+                        <Text align="CENTER" ellipsis="TRUE" maxLines="1">
+                            <Font family="SYNC_TO_DEVICE" size="18" weight="MEDIUM" slant="NORMAL" color="[CONFIGURATION.complicationTextColor]">
+                                <Template>%s<Parameter expression="[COMPLICATION.TEXT]"/></Template>
+                            </Font>
+                        </Text>
+                    </PartText>
+                </Group>
+            </Complication>
+
+            <Complication type="SHORT_TEXT">
+                <!-- Background circle -->
+                <PartDraw x="0" y="0" width="90" height="90">
+                    <Ellipse x="0" y="0" width="90" height="90">
+                        <Fill color="[CONFIGURATION.complicationBackgroundColor]"/>
+                    </Ellipse>
+                </PartDraw>
+
+                <!-- Icon -->
+                <PartImage x="32" y="19" width="26" height="26" tintColor="[CONFIGURATION.complicationMainColor]">
+                    <Image resource="[COMPLICATION.MONOCHROMATIC_IMAGE]" />
+                </PartImage>
+
+                <!-- Font / Text -->
+                <Group name="fontTextComplication"  x="0" y="0" width="450" height="450">
+                    <PartText x="10" y="50" width="70" height="20">
+                        <Text align="CENTER" ellipsis="TRUE" maxLines="1">
+                            <Font family="SYNC_TO_DEVICE" size="18" weight="MEDIUM" slant="NORMAL" color="[CONFIGURATION.complicationTextColor]">
+                                <Template>%s<Parameter expression="[COMPLICATION.TEXT]"/></Template>
+                            </Font>
+                        </Text>
+                    </PartText>
+                </Group>
+            </Complication>
+
+            <Complication type="PHOTO_IMAGE">
+                <PartImage x="0" y="0" height="90" width="90">
+                    <Image resource="[COMPLICATION.PHOTO_IMAGE]"/>
+                </PartImage>
+            </Complication>
+
+            <Complication type="SMALL_IMAGE">
+                <Condition>
+                    <Expressions>
+                        <!-- Check if it is an icon or a photo -->
+                        <Expression name="icon">
+                            <![CDATA[[COMPLICATION.SMALL_IMAGE] != null && [COMPLICATION.IMAGE_STYLE] == 2]]>
+                        </Expression>
+                        <Expression name="photo">
+                            <![CDATA[[COMPLICATION.SMALL_IMAGE] != null && [COMPLICATION.IMAGE_STYLE] == 1]]>
+                        </Expression>
+                    </Expressions>
+
+                    <!-- If it is an icon -->
+                    <Compare expression="icon">
+                        <!-- Background circle -->
+                        <PartDraw x="0" y="0" width="90" height="90">
+                            <Ellipse x="0" y="0" width="90" height="90">
+                                <Fill color="[CONFIGURATION.complicationBackgroundColor]"/>
+                            </Ellipse>
+                        </PartDraw>
+
+                        <!-- Icon -->
+                        <PartImage x="20" y="20" width="50" height="50" tintColor="[CONFIGURATION.complicationMainColor]">
+                            <Image resource="[COMPLICATION.SMALL_IMAGE]" />
+                        </PartImage>
+                    </Compare>
+
+                    <!-- If it is a photo -->
+                    <Compare expression="photo">
+                        <PartImage x="0" y="0" width="90" height="90">
+                            <Image resource="[COMPLICATION.SMALL_IMAGE]" />
+                        </PartImage>
+                    </Compare>
+                </Condition>
+            </Complication>
+        </ComplicationSlot>
+
+        <!-- Top complication slot -->
+        <ComplicationSlot
+            x="157" y="103"
+            width="136" height="63"
+            slotId="3"
+            isCustomizable="TRUE"
+            supportedTypes="LONG_TEXT SHORT_TEXT">
+
+            <DefaultProviderPolicy
+                defaultSystemProvider="EMPTY"
+                defaultSystemProviderType="LONG_TEXT"/>
+
+            <BoundingRoundBox x="0" y="0" width="136" height="63" cornerRadius="150"/>
+
+            <Complication type="SHORT_TEXT">
+                <!-- Background circle -->
+                <PartDraw x="0" y="0" width="136" height="63">
+                    <RoundRectangle x="0" y="0" width="135" height="63" cornerRadiusX="150" cornerRadiusY="150">
+                        <Fill color="[CONFIGURATION.complicationBackgroundColor]"/>
+                    </RoundRectangle>
+                </PartDraw>
+
+                <!-- Icon -->
+                <PartImage x="18" y="18" width="26" height="26" tintColor="[CONFIGURATION.complicationMainColor]">
+                    <Image resource="[COMPLICATION.MONOCHROMATIC_IMAGE]" />
+                </PartImage>
+
+                <!-- Font / Text -->
+                <Group name="fontTextComplication"  x="0" y="0" width="450" height="450">
+                    <PartText x="53" y="21" width="70" height="20">
+                        <Text align="CENTER" ellipsis="TRUE" maxLines="1">
+                            <Font family="SYNC_TO_DEVICE" size="18" weight="MEDIUM" slant="NORMAL" color="[CONFIGURATION.complicationTextColor]">
+                                <Template>%s<Parameter expression="[COMPLICATION.TEXT]"/></Template>
+                            </Font>
+                        </Text>
+                    </PartText>
+                </Group>
+            </Complication>
+
+            <Complication type="LONG_TEXT">
+                <!-- Background circle -->
+                <PartDraw x="0" y="0" width="136" height="63">
+                    <RoundRectangle x="0" y="0" width="135" height="63" cornerRadiusX="150" cornerRadiusY="150">
+                        <Fill color="[CONFIGURATION.complicationBackgroundColor]"/>
+                    </RoundRectangle>
+                </PartDraw>
+
+                <!-- Icon -->
+                <PartImage x="18" y="18" width="26" height="26" tintColor="[CONFIGURATION.complicationMainColor]">
+                    <Image resource="[COMPLICATION.MONOCHROMATIC_IMAGE]" />
+                </PartImage>
+
+                <!-- Font / Text -->
+                <Group name="fontTextComplication"  x="0" y="0" width="450" height="450">
+                    <PartText x="53" y="21" width="70" height="20">
+                        <Text align="CENTER" ellipsis="TRUE" maxLines="1">
+                            <Font family="SYNC_TO_DEVICE" size="18" weight="MEDIUM" slant="NORMAL" color="[CONFIGURATION.complicationTextColor]">
+                                <Template>%s<Parameter expression="[COMPLICATION.TEXT]"/></Template>
+                            </Font>
+                        </Text>
+                    </PartText>
+                </Group>
+            </Complication>
+        </ComplicationSlot>
+
+        <!-- Hands -->
+        <ListConfiguration id="handStyle">
+            <ListOption id="0">
+                <AnalogClock x="0" y="0" width="450" height="450">
+                    <MinuteHand resource="hand_rounded_1_minute" x="203" y="0" width="44" height="275" pivotX="0.5" pivotY="0.817686" tintColor="[CONFIGURATION.minuteHandColor]"/>
+
+                    <SecondHand resource="hand_rounded_1_second" x="203" y="0" width="44" height="275" pivotX="0.5" pivotY="0.817686" tintColor="[CONFIGURATION.secondHandColor]">
+                        <Variant mode="AMBIENT" target="alpha" value="0" />
+
+                        <Tick duration="0" strength="0"/>
+                    </SecondHand>
+
+                    <HourHand resource="hand_rounded_1_hour" x="203" y="0" width="44" height="275" pivotX="0.5" pivotY="0.817686" tintColor="[CONFIGURATION.hourHandColor.0]"/>
+                </AnalogClock>
+            </ListOption>
+
+            <ListOption id="1">
+                <AnalogClock x="0" y="0" width="450" height="450">
+                    <MinuteHand resource="hand_rounded_1_minute" x="203" y="0" width="44" height="275" pivotX="0.5" pivotY="0.817686" tintColor="[CONFIGURATION.minuteHandColor]"/>
+
+                    <HourHand resource="hand_rounded_1_hour" x="203" y="0" width="44" height="275" pivotX="0.5" pivotY="0.817686" tintColor="[CONFIGURATION.hourHandColor.0]"/>
+                </AnalogClock>
+            </ListOption>
+
+            <ListOption id="2">
+                <AnalogClock x="0" y="0" width="450" height="450">
+                    <MinuteHand resource="hand_rounded_2_minute" x="203" y="0" width="44" height="275" pivotX="0.5" pivotY="0.817686" tintColor="[CONFIGURATION.minuteHandColor]"/>
+
+                    <HourHand resource="hand_rounded_2_hour" x="203" y="0" width="44" height="275" pivotX="0.5" pivotY="0.817686" tintColor="[CONFIGURATION.hourHandColor.0]"/>
+
+                    <SecondHand resource="hand_rounded_2_second" x="203" y="0" width="44" height="275" pivotX="0.5" pivotY="0.817686" tintColor="[CONFIGURATION.secondHandColor]">
+                        <Variant mode="AMBIENT" target="alpha" value="0" />
+
+                        <Tick duration="0" strength="0"/>
+                    </SecondHand>
+                </AnalogClock>
+            </ListOption>
+
+            <ListOption id="3">
+                <AnalogClock x="0" y="0" width="450" height="450">
+                    <MinuteHand resource="hand_rounded_2_minute" x="203" y="0" width="44" height="275" pivotX="0.5" pivotY="0.817686" tintColor="[CONFIGURATION.minuteHandColor]"/>
+
+                    <HourHand resource="hand_rounded_2_hour" x="203" y="0" width="44" height="275" pivotX="0.5" pivotY="0.817686" tintColor="[CONFIGURATION.hourHandColor.0]"/>
+                </AnalogClock>
+            </ListOption>
+
+            <ListOption id="4">
+                <AnalogClock x="0" y="0" width="450" height="450">
+                    <MinuteHand resource="hand_rounded_3_minute_0" x="203" y="0" width="44" height="275" pivotX="0.5" pivotY="0.817686" tintColor="#ebebeb"/>
+                    <MinuteHand resource="hand_rounded_3_minute_1" x="203" y="0" width="44" height="275" pivotX="0.5" pivotY="0.817686" tintColor="[CONFIGURATION.minuteHandColor]"/>
+
+                    <HourHand resource="hand_rounded_3_hour_0" x="203" y="0" width="44" height="275" pivotX="0.5" pivotY="0.817686" tintColor="#ebebeb"/>
+                    <HourHand resource="hand_rounded_3_hour_1" x="203" y="0" width="44" height="275" pivotX="0.5" pivotY="0.817686" tintColor="[CONFIGURATION.hourHandColor.0]"/>
+
+                    <SecondHand resource="hand_rounded_3_second" x="203" y="0" width="44" height="275" pivotX="0.5" pivotY="0.817686" tintColor="[CONFIGURATION.secondHandColor]">
+                        <Variant mode="AMBIENT" target="alpha" value="0" />
+
+                        <Tick duration="0" strength="0" />
+                    </SecondHand>
+                </AnalogClock>
+            </ListOption>
+
+            <ListOption id="5">
+                <AnalogClock x="0" y="0" width="450" height="450">
+                    <MinuteHand resource="hand_rounded_3_minute_0" x="203" y="0" width="44" height="275" pivotX="0.5" pivotY="0.817686" tintColor="#ebebeb"/>
+                    <MinuteHand resource="hand_rounded_3_minute_1" x="203" y="0" width="44" height="275" pivotX="0.5" pivotY="0.817686" tintColor="[CONFIGURATION.minuteHandColor]"/>
+
+                    <HourHand resource="hand_rounded_3_hour_0" x="203" y="0" width="44" height="275" pivotX="0.5" pivotY="0.817686" tintColor="#ebebeb"/>
+                    <HourHand resource="hand_rounded_3_hour_1" x="203" y="0" width="44" height="275" pivotX="0.5" pivotY="0.817686" tintColor="[CONFIGURATION.hourHandColor.0]"/>
+                </AnalogClock>
+            </ListOption>
+
+            <ListOption id="6">
+                <AnalogClock x="0" y="0" width="450" height="450">
+                    <MinuteHand resource="hand_squared_1_minute" x="203" y="0" width="44" height="275" pivotX="0.5" pivotY="0.817686" tintColor="[CONFIGURATION.minuteHandColor]"/>
+
+                    <HourHand resource="hand_squared_1_hour" x="203" y="0" width="44" height="275" pivotX="0.5" pivotY="0.817686" tintColor="[CONFIGURATION.hourHandColor.0]"/>
+
+                    <SecondHand resource="hand_squared_1_second" x="203" y="0" width="44" height="275" pivotX="0.5" pivotY="0.817686" tintColor="[CONFIGURATION.secondHandColor]">
+                        <Variant mode="AMBIENT" target="alpha" value="0" />
+
+                        <Tick duration="0" strength="0" />
+                    </SecondHand>
+                </AnalogClock>
+            </ListOption>
+
+            <ListOption id="7">
+                <AnalogClock x="0" y="0" width="450" height="450">
+                    <MinuteHand resource="hand_squared_1_minute" x="203" y="0" width="44" height="275" pivotX="0.5" pivotY="0.817686" tintColor="[CONFIGURATION.minuteHandColor]"/>
+
+                    <HourHand resource="hand_squared_1_hour" x="203" y="0" width="44" height="275" pivotX="0.5" pivotY="0.817686" tintColor="[CONFIGURATION.hourHandColor.0]"/>
+                </AnalogClock>
+            </ListOption>
+
+            <ListOption id="8">
+                <AnalogClock x="0" y="0" width="450" height="450">
+                    <MinuteHand resource="hand_squared_2_minute" x="203" y="0" width="44" height="275" pivotX="0.5" pivotY="0.817686" tintColor="[CONFIGURATION.minuteHandColor]"/>
+
+                    <HourHand resource="hand_squared_2_hour" x="203" y="0" width="44" height="275" pivotX="0.5" pivotY="0.817686" tintColor="[CONFIGURATION.hourHandColor.0]"/>
+
+                    <SecondHand resource="hand_squared_2_second" x="203" y="0" width="44" height="275" pivotX="0.5" pivotY="0.817686" tintColor="[CONFIGURATION.secondHandColor]">
+                        <Variant mode="AMBIENT" target="alpha" value="0" />
+
+                        <Tick duration="0" strength="0" />
+                    </SecondHand>
+                </AnalogClock>
+            </ListOption>
+
+            <ListOption id="9">
+                <AnalogClock x="0" y="0" width="450" height="450">
+                    <MinuteHand resource="hand_squared_2_minute" x="203" y="0" width="44" height="275" pivotX="0.5" pivotY="0.817686" tintColor="[CONFIGURATION.minuteHandColor]"/>
+
+                    <HourHand resource="hand_squared_2_hour" x="203" y="0" width="44" height="275" pivotX="0.5" pivotY="0.817686" tintColor="[CONFIGURATION.hourHandColor.0]"/>
+                </AnalogClock>
+            </ListOption>
+
+            <ListOption id="10">
+                <Group name="clock" x="0" y="0" width="450" height="450">
+                    <AnalogClock x="0" y="0" width="450" height="450">
+                        <MinuteHand resource="hand_other_1_minute_0" x="203" y="0" width="44" height="275" pivotX="0.5" pivotY="0.817686"/>
+                        <MinuteHand resource="hand_other_1_minute_1" x="203" y="0" width="44" height="275" pivotX="0.5" pivotY="0.817686" tintColor="[CONFIGURATION.minuteHandColor]"/>
+
+                        <HourHand resource="hand_other_1_hour_0" x="203" y="0" width="44" height="275" pivotX="0.5" pivotY="0.817686"/>
+                        <HourHand resource="hand_other_1_hour_1" x="203" y="0" width="44" height="275" pivotX="0.5" pivotY="0.817686" tintColor="[CONFIGURATION.hourHandColor.0]"/>
+
+                        <SecondHand resource="hand_other_1_second_0" x="203" y="0" width="44" height="275" pivotX="0.5" pivotY="0.817686">
+                            <Variant mode="AMBIENT" target="alpha" value="0" />
+
+                            <Tick duration="0" strength="0" />
+                        </SecondHand>
+
+                        <SecondHand resource="hand_other_1_second_1" x="203" y="0" width="44" height="275" pivotX="0.5" pivotY="0.817686" tintColor="[CONFIGURATION.secondHandColor]">
+                            <Variant mode="AMBIENT" target="alpha" value="0" />
+
+                            <Tick duration="0" strength="0" />
+                        </SecondHand>
+                    </AnalogClock>
+
+                    <!-- Logo -->
+                    <Group name="logo" x="0" y="0" width="450" height="450">
+                        <PartImage x="216" y="216" width="18" height="18" tintColor="[CONFIGURATION.backgroundColor]">
+                            <Image resource="dect_logo_50" />
+                        </PartImage>
+                    </Group>
+                </Group>
+            </ListOption>
+
+            <ListOption id="11">
+                <Group name="clock" x="0" y="0" width="450" height="450">
+                    <AnalogClock x="0" y="0" width="450" height="450">
+                        <MinuteHand resource="hand_other_1_minute_0" x="203" y="0" width="44" height="275" pivotX="0.5" pivotY="0.817686"/>
+                        <MinuteHand resource="hand_other_1_minute_1" x="203" y="0" width="44" height="275" pivotX="0.5" pivotY="0.817686" tintColor="[CONFIGURATION.minuteHandColor]"/>
+
+                        <HourHand resource="hand_other_1_hour_0" x="203" y="0" width="44" height="275" pivotX="0.5" pivotY="0.817686"/>
+                        <HourHand resource="hand_other_1_hour_1" x="203" y="0" width="44" height="275" pivotX="0.5" pivotY="0.817686" tintColor="[CONFIGURATION.hourHandColor.0]"/>
+                    </AnalogClock>
+
+                    <!-- Logo -->
+                    <Group name="logo" x="0" y="0" width="450" height="450">
+                        <PartImage x="216" y="216" width="18" height="18" tintColor="[CONFIGURATION.backgroundColor]">
+                            <Image resource="dect_logo_50" />
+                        </PartImage>
+                    </Group>
+                </Group>
+            </ListOption>
+
+            <ListOption id="12">
+                <Group name="clock" x="0" y="0" width="450" height="450">
+                    <AnalogClock x="0" y="0" width="450" height="450">
+                        <MinuteHand resource="hand_digital_1_minute" x="203" y="0" width="44" height="275" pivotX="0.5" pivotY="0.817686" tintColor="[CONFIGURATION.minuteHandColor]"/>
+
+                        <HourHand resource="hand_digital_1_hour" x="203" y="0" width="44" height="275" pivotX="0.5" pivotY="0.817686" tintColor="[CONFIGURATION.hourHandColor.0]"/>
+                    </AnalogClock>
+
+                    <Group name="clock2" x="0" y="0" width="450" height="450">
+                        <Group name="digitalClockFont" x="69" y="203" width="180" height="44" angle="90" pivotX="0.8651515126497425" pivotY="0.49880241673206815">
+                            <Transform target="angle" value="90 + ((([HOUR_0_11_MINUTE] * 360) / 11.999))"/>
+
+                            <PartText x="0" y="0" width="180" height="44" pivotX="0.8651523652617092" pivotY="0.49874986124827125" alpha="255">
+                                <Transform target="alpha" value="clamp(floor((0 + ([HOUR_0_11_MINUTE] &gt; 6 ? 100 : 0)) / 100 * 255), 0, 255)"/>
+
+                                <Localization calendar="GREGORIAN"/>
+
+                                <Text align="CENTER" ellipsis="FALSE">
+                                    <Font family="SYNC_TO_DEVICE" size="30" weight="MEDIUM" slant="NORMAL" color="[CONFIGURATION.hourHandColor.1]">
+                                        <Template>%s:%s
+                                            <Parameter expression="[HOUR_1_12_Z]"/>
+                                            <Parameter expression="[MINUTE_Z]"/>
+                                        </Template>
+                                    </Font>
+                                </Text>
+                            </PartText>
+
+                            <PartText x="131" y="0" width="180" height="44" angle="180" pivotX="0.1348437746008374" pivotY="0.5011191616482955" alpha="255">
+                                <Transform target="alpha" value="clamp(floor((0 + ([HOUR_0_11_MINUTE] &lt;= 6 ? 100 : 0)) / 100 * 255), 0, 255)"/>
+
+                                <Localization calendar="GREGORIAN"/>
+
+                                <Text align="CENTER" ellipsis="FALSE">
+                                    <Font family="SYNC_TO_DEVICE" size="30" weight="MEDIUM" slant="NORMAL" color="[CONFIGURATION.hourHandColor.1]">
+                                        <Template>%s:%s
+                                            <Parameter expression="[HOUR_1_12_Z]"/>
+                                            <Parameter expression="[MINUTE_Z]"/>
+                                        </Template>
+                                    </Font>
+                                </Text>
+                            </PartText>
+                        </Group>
+                    </Group>
+                </Group>
+            </ListOption>
+
+            <ListOption id="13">
+                <Group name="clock" x="0" y="0" width="450" height="450">
+                    <AnalogClock x="0" y="0" width="450" height="450">
+                        <HourHand resource="hand_digital_1_hour" x="203" y="0" width="44" height="275" pivotX="0.5" pivotY="0.817686" tintColor="[CONFIGURATION.hourHandColor.0]"/>
+                    </AnalogClock>
+
+                    <Group name="clock2" x="0" y="0" width="450" height="450">
+                        <Group name="digitalClockFont" x="69" y="203" width="180" height="44" angle="90" pivotX="0.8651515126497425" pivotY="0.49880241673206815">
+                            <Transform target="angle" value="90 + ((([HOUR_0_11_MINUTE] * 360) / 11.999))"/>
+
+                            <PartText x="0" y="0" width="180" height="44" pivotX="0.8651523652617092" pivotY="0.49874986124827125" alpha="255">
+                                <Transform target="alpha" value="clamp(floor((0 + ([HOUR_0_11_MINUTE] &gt; 6 ? 100 : 0)) / 100 * 255), 0, 255)"/>
+
+                                <Localization calendar="GREGORIAN"/>
+
+                                <Text align="CENTER" ellipsis="FALSE">
+                                    <Font family="SYNC_TO_DEVICE" size="30" weight="MEDIUM" slant="NORMAL" color="[CONFIGURATION.hourHandColor.1]">
+                                        <Template>%s:%s
+                                            <Parameter expression="[HOUR_1_12_Z]"/>
+                                            <Parameter expression="[MINUTE_Z]"/>
+                                        </Template>
+                                    </Font>
+                                </Text>
+                            </PartText>
+
+                            <PartText x="131" y="0" width="180" height="44" angle="180" pivotX="0.1348437746008374" pivotY="0.5011191616482955" alpha="255">
+                                <Transform target="alpha" value="clamp(floor((0 + ([HOUR_0_11_MINUTE] &lt;= 6 ? 100 : 0)) / 100 * 255), 0, 255)"/>
+
+                                <Localization calendar="GREGORIAN"/>
+
+                                <Text align="CENTER" ellipsis="FALSE">
+                                    <Font family="SYNC_TO_DEVICE" size="30" weight="MEDIUM" slant="NORMAL" color="[CONFIGURATION.hourHandColor.1]">
+                                        <Template>%s:%s
+                                            <Parameter expression="[HOUR_1_12_Z]"/>
+                                            <Parameter expression="[MINUTE_Z]"/>
+                                        </Template>
+                                    </Font>
+                                </Text>
+                            </PartText>
+                        </Group>
+                    </Group>
+                </Group>
+            </ListOption>
+        </ListConfiguration>
+    </Scene>
+</WatchFace>

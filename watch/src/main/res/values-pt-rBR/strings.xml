@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="complication_calendar">Calendário</string>
+    <string name="complication_calendar_description">@string/complication_calendar</string>
+
+    <string name="calendar_tile">Calendário</string>
+    <string name="calendar_tile_description">@string/calendar_tile</string>
+
+    <string name="toast_success_done">Feito!</string>
+    <string name="toast_info_permission">A permissão para acessar o calendário é necessária!</string>
+    <string name="toast_info_preview">Não há eventos para renderizar a amostra!</string>
+    <string name="toast_info_color">Toque e segure para removê-la!</string>
+    <string name="toast_info_check_phone">Verifique o seu celular!</string>
+    <string name="toast_error_generic">Algo deu errado!</string>
+    <string name="toast_error_input_freq_min">O tempo mínimo é de 15 minutos!</string>
+    <string name="toast_error_update">Não foi possível procurar por uma atualização!</string>
+
+    <string name="configuration_generic_flavor">Sugestão</string>
+
+    <string name="configuration_hand_hour_color">Cor do ponteiro da hora</string>
+    <string name="configuration_hand_minute_color">Cor do ponteiro do minuto</string>
+    <string name="configuration_hand_second_color">Cor do ponteiro do segundo</string>
+
+    <string name="configuration_background_color">Cor de fundo</string>
+
+    <string name="configuration_complications_background_color">Cor de fundo das complicações</string>
+    <string name="configuration_complications_main_color">Cor principal das complicações</string>
+    <string name="configuration_complications_text_color">Cor do texto das complicações</string>
+
+    <string name="configuration_hand_style">Estilo do ponteiro</string>
+    <string name="configuration_hand_style_rounded_1">Arredondado 1</string>
+    <string name="configuration_hand_style_rounded_1_no_second">Arredondado 1 (sem o segundo)</string>
+    <string name="configuration_hand_style_rounded_2">Arredondado 2</string>
+    <string name="configuration_hand_style_rounded_2_no_second">Arredondado 2 (sem o segundo)</string>
+    <string name="configuration_hand_style_rounded_3">Arredondado 3</string>
+    <string name="configuration_hand_style_rounded_3_no_second">Arredondado 3 (sem o segundo)</string>
+    <string name="configuration_hand_style_squared_1">Quadrado 1</string>
+    <string name="configuration_hand_style_squared_1_no_second">Quadrado 1 (sem o segundo)</string>
+    <string name="configuration_hand_style_squared_2">Quadrado 2</string>
+    <string name="configuration_hand_style_squared_2_no_second">Quadrado 2 (sem o segundo)</string>
+    <string name="configuration_hand_style_other_1">Outros 1</string>
+    <string name="configuration_hand_style_other_1_no_second">Outros 1 (sem o segundo)</string>
+    <string name="configuration_hand_style_digital_1">Digital 1</string>
+    <string name="configuration_hand_style_digital_1_no_minute">Digital 1 (sem o minuto)</string>
+
+    <string name="no_events">Sem eventos</string>
+
+    <string name="group_calendar">Calendário</string>
+
+    <string name="background_color">Cor de fundo</string>
+
+    <string name="event_colors">Paleta</string>
+    <string name="event_colors_description">O app tentará usar as cores dos eventos. Caso não consiga, usará as cores adicionadas aqui, na sequência. Caso não tenha nenhuma cor adicionada, usará uma paleta interna. Ative a opção abaixo para forçar o uso dessa paleta, mesmo que o evento tenha uma cor definida.</string>
+    <string name="force_palette">Forçar paleta</string>
+    <string name="event_colors_helper">Toque e segure uma cor para removê-la!</string>
+
+    <string name="show_all_day_events">Eventos de dia inteiro</string>
+    <string name="show_rounded_corners">Cantos arredondados</string>
+    <string name="show_border_only">Bordas apenas</string>
+    <string name="show_hidden_events_number">Mostrar quantidade de eventos não exibidos</string>
+    <string name="force_uppercase">Forçar fonte maiúscula</string>
+    <string name="events_info_color">Cor do texto de informação</string>
+    <string name="preview">Visualizar</string>
+
+
+    <string name="group_tile">Tile</string>
+
+    <string name="show_minute_hand">Ponteiro minuto</string>
+    <string name="show_last_update_time">Mostrar hora da última atualização</string>
+
+    <string name="group_app">App</string>
+
+    <string name="version">Versão</string>
+    <string name="version_checking">Procurando atualização…</string>
+    <string name="version_updated">Seu app está atualiazado!</string>
+    <string name="version_not_updated">Uma nova versão está disponível!</string>
+    <string name="version_btn_download_phone">Baixar no celular</string>
+    <string name="version_installer">Ou use o app do celular para atualizar!</string>
+
+    <string name="github">Mostrar projeto no github</string>
+
+    <string name="warning_deep_sleep">
+    Confirme que o app não está na lista de <b>Aplicativos suspensos</b>, para que ele possa funcionar corretamente!
+    \n\nVá em <b>Configuração > Bateria > Aplicativos suspensos</b>;
+    \nSe o app estiver nesta lista, precione e segure ele, role até o fim da página e clique em <b>Remover da lista</b>.
+    \n\nVocê sempre pode clicar no mostrador para atualiza-lo!
+    </string>
+
+    <string name="confirm">Confirmar?</string>
+
+    <string name="more_remove_colors">Remover todas as cores</string>
+    <string name="more_reset">Restaurar configurações</string>
+</resources>

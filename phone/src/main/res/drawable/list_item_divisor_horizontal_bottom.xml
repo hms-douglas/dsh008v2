@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:gravity="bottom"
+        android:left="@dimen/group_items_space_side"
+        android:right="@dimen/group_items_space_side">
+
+        <shape
+            android:shape="rectangle">
+            <size
+                android:height="@dimen/group_items_divisor_height"/>
+            <solid
+                android:color="@color/group_item_divisor"/>
+        </shape>
+    </item>
+</layer-list>

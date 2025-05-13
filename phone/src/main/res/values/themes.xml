@@ -1,0 +1,27 @@
+<resources>
+    <style name="Base.Theme.DSH008V2" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@color/activity_background</item>
+        <item name="android:colorPrimary">@color/main</item>
+        <item name="android:colorAccent">@color/main</item>
+        <item name="android:buttonStyle">@style/Widget.AppCompat.Button.Borderless</item>
+        <item name="android:textColorHighlight">@color/textColorHighlight</item>
+
+        <item name="android:windowSplashScreenBackground">@color/activity_background</item>
+        <item name="android:windowSplashScreenIconBackgroundColor">@color/activity_background</item>
+    </style>
+
+    <style name="Theme.DSH008V2" parent="Base.Theme.DSH008V2" />
+
+    <style name="PopupMenu" parent="@style/Widget.AppCompat.PopupMenu.Overflow">
+        <item name="android:popupBackground">@drawable/menu_background</item>
+        <item name="android:dropDownHorizontalOffset">@dimen/menu_horizontal_offset</item>
+    </style>
+
+    <style name="Theme.Translucent" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:buttonStyle">@style/Widget.AppCompat.Button.Borderless</item>
+        <item name="android:textColorHighlight">@color/textColorHighlight</item>
+        <item name="colorAccent">@color/main</item>
+    </style>
+</resources>

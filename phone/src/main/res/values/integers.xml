@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="popup_max_height_percentage">80</integer>
+
+    <integer name="popup_animation_duration_out">150</integer>
+
+    <integer name="angle_hour">324</integer>
+    <integer name="angle_minute">48</integer>
+    <integer name="angle_second">192</integer>
+</resources>

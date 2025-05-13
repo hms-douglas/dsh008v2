@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.USE_EXACT_ALARM"/>
+
+    <uses-feature android:name="android.hardware.type.watch" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@android:style/Theme.DeviceDefault">
+
+        <uses-library
+            android:name="com.google.android.wearable"
+            android:required="true" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <meta-data
+            android:name="com.google.android.wearable.standalone"
+            android:value="true" />
+
+        <property
+            android:name="com.google.wear.watchface.format.version"
+            android:value="2" />
+
+        <activity
+            android:name=".activity.SettingsActivity"
+            android:exported="true"
+            android:taskAffinity="">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activity.SettingsEventColorsActivity"
+            android:exported="false"
+            android:taskAffinity="">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activity.PreviewActivity"
+            android:exported="false"
+            android:taskAffinity=""
+            android:noHistory="true"
+            android:excludeFromRecents="true">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activity.input.InputColorActivity"
+            android:exported="false"
+            android:taskAffinity=""
+            android:noHistory="true"
+            android:excludeFromRecents="true"
+            android:theme="@style/DisableSwipeBack">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activity.VersionActivity"
+            android:exported="true"
+            android:taskAffinity=""
+            android:noHistory="true"
+            android:excludeFromRecents="true">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activity.helper.UpdaterActivity"
+            android:exported="true"
+            android:taskAffinity=""
+            android:theme="@style/Theme.Transparent"
+            android:noHistory="true"
+            android:excludeFromRecents="true">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activity.helper.PermissionActivity"
+            android:exported="true"
+            android:taskAffinity=""
+            android:theme="@style/Theme.Transparent"
+            android:noHistory="true"
+            android:excludeFromRecents="true">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".complication.CalendarComplication"
+            android:icon="@drawable/preview_complication"
+            android:label="@string/complication_calendar"
+            android:exported="true"
+            android:permission="com.google.android.wearable.permission.BIND_COMPLICATION_PROVIDER">
+
+            <intent-filter>
+                <action android:name="android.support.wearable.complications.ACTION_COMPLICATION_UPDATE_REQUEST"/>
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.wearable.complications.SUPPORTED_TYPES"
+                android:value="LARGE_IMAGE"/>
+
+            <meta-data
+                android:name="android.support.wearable.complications.UPDATE_PERIOD_SECONDS"
+                android:value="0"/> <!-- NOT ALWAYS WORK FOR "LARGE_IMAGE", SO I DISABLED AND REPLACED WITH WORKER -->
+        </service>
+
+        <service
+            android:name=".tile.CalendarTile"
+            android:label="@string/calendar_tile"
+            android:description="@string/calendar_tile_description"
+            android:exported="true"
+            android:permission="com.google.android.wearable.permission.BIND_TILE_PROVIDER">
+            <intent-filter>
+                <action android:name="androidx.wear.tiles.action.BIND_TILE_PROVIDER" />
+            </intent-filter>
+
+            <meta-data android:name="androidx.wear.tiles.PREVIEW" android:resource="@drawable/preview_tile" />
+        </service>
+
+        <receiver
+            android:name=".receiver.BootReceiver"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".receiver.DateReceiver"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.DATE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".receiver.AlarmReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="calendarUpdate" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".communication.DataLayerReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.wearable.DATA_CHANGED"/>
+                <data
+                    android:host="*"
+                    android:pathPrefix="/dsh008v2"
+                    android:scheme="wear" />
+            </intent-filter>
+        </service>
+    </application>
+</manifest>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ic_launcher_background">#000000</color>
+
+    <color name="main">#FBD75B</color>
+
+    <color name="activity_background">#F3F3F3</color>
+
+    <color name="c0">#000000</color>
+    <color name="c1">#7D7D7D</color>
+    <color name="c2">#FCFCFC</color>
+    <color name="c3">#FFFFFF</color>
+    <color name="c4">#252525</color>
+    <color name="c5">#FFFFFF</color>
+    <color name="c6">#A92C2C</color>
+
+    <color name="popup_background">#B5000000</color>
+    <color name="popup_title">@color/c0</color>
+    <color name="popup_container_background">@color/c2</color>
+    <color name="popup_btn_text">@color/c0</color>
+    <color name="popup_btn">@color/popup_container_background</color>
+
+    <color name="radio_on">#E4B31B</color>
+    <color name="radio_off">@color/c1</color>
+    <color name="radio_checkbox_text">@color/c0</color>
+
+    <color name="content_background">@color/activity_background</color>
+
+    <color name="app_bar_font_title">@color/c0</color>
+
+    <color name="group_background">@color/c2</color>
+    <color name="group_title">@color/c0</color>
+    <color name="group_instruction">@color/c4</color>
+
+    <color name="input_background">@color/c3</color>
+    <color name="input_text">@color/c0</color>
+    <color name="input_hint">@color/c1</color>
+
+    <color name="textColorHighlight">@color/main</color>
+
+    <color name="btn">@color/main</color>
+    <color name="btn_text">#000000</color>
+    <color name="btn_effect">#EBDAD7C9</color>
+
+    <color name="btn_secondary_text">@color/c4</color>
+
+    <color name="btn_dropdown_text">@color/c0</color>
+
+    <color name="tool_bar_icon">@color/c0</color>
+
+    <color name="watch">#CFD4DA</color>
+    <color name="watch_screen">#FFFFFF</color>
+
+    <color name="menu_background">@color/c5</color>
+
+    <color name="group_button_text">@color/c0</color>
+
+    <color name="switch_background_off">@color/c1</color>
+
+    <color name="group_item_divisor">#E1E1E1</color>
+    <color name="group_item_effect">#6A313337</color>
+
+    <color name="group_text">#7B7B7B</color>
+
+    <color name="hand_second">#9a9a9a</color>
+    <color name="hand_minute">#fbd75b</color>
+    <color name="hand_hour">#ebebeb</color>
+
+    <color name="popup_background_transparent">@color/popup_background</color>
+    <color name="popup_btn_divisor">#E1E1E1</color>
+    <color name="popup_text">@color/c0</color>
+    <color name="popup_btn_text_dangerous">@color/c6</color>
+
+    <color name="color_picker_label">@color/c1</color>
+    <color name="color_picker_value">@color/popup_text</color>
+
+    <color name="progress_background">#EAEAEA</color>
+    <color name="progress_text">@color/c4</color>
+    <color name="progress_text_success">#276217</color>
+    <color name="progress_text_error">@color/c6</color>
+
+    <color name="icon_delete">@color/c6</color>
+</resources>

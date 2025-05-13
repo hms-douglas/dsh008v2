@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- EVENT TEXT COLOR (DECIDED BY CONTRAST RATIO CALCULATION) -->
+    <color name="event_color_text_dark">#000000</color>
+    <color name="event_color_text_light">#FFFFFF</color>
+
+    <!-- INTERNAL PALETTE | This way is easier to add/remove/change the color palette without having to change the code -->
+    <string-array name="palette">
+        <item>#D44246</item>
+        <item>#6AB055</item>
+        <item>#7886CB</item>
+        <item>#4D7ADE</item>
+        <item>#63D0D2</item>
+        <item>#F27199</item>
+        <item>#EA9E5A</item>
+        <item>#EA7C5A</item>
+        <item>#EAD75A</item>
+        <item>#A2EA5A</item>
+        <item>#5AEA94</item>
+        <item>#BB7DBF</item>
+    </string-array>
+</resources>

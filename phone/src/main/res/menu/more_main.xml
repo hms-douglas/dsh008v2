@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/group0">
+        <item
+            android:id="@+id/reset"
+            android:title="@string/more_reset" />
+
+        <item
+            android:id="@+id/update"
+            android:title="@string/more_check_update" />
+    </group>
+
+    <group android:id="@+id/group1">
+        <item
+            android:id="@+id/install"
+            android:title="@string/more_install_on_watch" />
+
+        <item
+            android:id="@+id/sync"
+            android:title="@string/more_sync_watch" />
+    </group>
+
+    <group android:id="@+id/group2">
+        <item
+            android:id="@+id/github"
+            android:title="@string/more_github" />
+
+        <item
+            android:id="@+id/about"
+            android:title="@string/more_about" />
+    </group>
+</menu>

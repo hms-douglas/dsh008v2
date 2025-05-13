@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activityTitle"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/activity_title_height"
+    android:text="Title"
+    android:gravity="center"
+    android:textColor="@color/activity_title"
+    android:textSize="@dimen/activity_title_font"
+    android:textStyle="bold"
+    android:ellipsize="end"
+    android:maxLines="1"/>

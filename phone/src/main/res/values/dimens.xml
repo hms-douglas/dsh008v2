@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="match_parent" format="integer" type="dimen">-1</item>
+
+    <dimen name="font_big">21sp</dimen>
+    <dimen name="font_medium">19sp</dimen>
+    <dimen name="font_normal">17sp</dimen>
+    <dimen name="font_small">15sp</dimen>
+    <dimen name="font_smaller">13sp</dimen>
+
+    <dimen name="font_page_title">40sp</dimen>
+    <dimen name="font_page_title_collapsed">@dimen/font_big</dimen>
+
+    <dimen name="input_radius">100dp</dimen>
+
+    <dimen name="btn_radius">500dp</dimen>
+    <dimen name="btn_height">45dp</dimen>
+    <dimen name="btn_font">@dimen/font_normal</dimen>
+    <dimen name="btn_elevation">0.5dp</dimen>
+
+    <dimen name="btn_dropdown_padding_start">15dp</dimen>
+    <dimen name="btn_dropdown_padding_end">10dp</dimen>
+
+    <dimen name="btn_secondary_height">35dp</dimen>
+    <dimen name="btn_secondary_font">@dimen/font_small</dimen>
+    <dimen name="btn_secondary_border">1dp</dimen>
+
+    <dimen name="input_height">@dimen/btn_height</dimen>
+    <dimen name="input_font">@dimen/font_normal</dimen>
+    <dimen name="input_elevation">@dimen/btn_elevation</dimen>
+
+    <dimen name="app_bar_height">300dp</dimen>
+
+    <dimen name="tool_bar_height">70dp</dimen>
+    <dimen name="tool_bar_padding_top">15dp</dimen>
+    <dimen name="tool_bar_padding_right">12dp</dimen>
+
+    <dimen name="tool_bar_btn_padding">9dp</dimen>
+
+    <dimen name="floating_btn_radius">500dp</dimen>
+
+    <dimen name="app_bar_font_title_collapsed">@dimen/font_page_title_collapsed</dimen>
+    <dimen name="app_bar_font_title_expanded">@dimen/font_page_title</dimen>
+    <dimen name="app_bar_title_padding_expanded">30dp</dimen>
+    <dimen name="app_bar_title_padding_collapsed">@dimen/tool_bar_btn_padding</dimen>
+
+    <dimen name="app_bar_container_height">@dimen/match_parent</dimen>
+
+    <dimen name="content_radius">20dp</dimen>
+    <dimen name="content_padding">8dp</dimen>
+
+    <dimen name="group_background_radius">@dimen/content_radius</dimen>
+    <dimen name="group_padding">20dp</dimen>
+    <dimen name="group_space_between">16dp</dimen>
+
+    <dimen name="group_title">@dimen/font_big</dimen>
+    <dimen name="group_title_padding">@dimen/group_padding</dimen>
+
+    <dimen name="group_title_step">@dimen/font_medium</dimen>
+    <dimen name="group_instruction">@dimen/font_normal</dimen>
+    <dimen name="group_instruction_padding">6dp</dimen>
+
+    <dimen name="form_space_vertical">10dp</dimen>
+    <dimen name="form_space_btn_vertical">@dimen/group_padding</dimen>
+
+    <dimen name="menu_radius">17dp</dimen>
+    <dimen name="menu_horizontal_offset">1dp</dimen>
+
+    <dimen name="progress_padding">10dp</dimen>
+    <dimen name="progress_background_radius">10dp</dimen>
+    <dimen name="progress_text">@dimen/font_small</dimen>
+
+    <dimen name="popup_width_percentage">1</dimen>
+    <dimen name="popup_margin">10dp</dimen>
+    <dimen name="popup_padding">22dp</dimen>
+    <dimen name="popup_list_margin_top_bottom">10dp</dimen>
+    <dimen name="popup_title">@dimen/font_normal</dimen>
+    <dimen name="popup_button_text">@dimen/btn_font</dimen>
+    <dimen name="popup_button_height">33dp</dimen>
+    <dimen name="picker_item_padding_top_bottom">10dp</dimen>
+    <dimen name="picker_item_padding_sides">3dp</dimen>
+
+    <dimen name="radio_checkbox_size">29dp</dimen>
+    <dimen name="radio_checkbox_text">@dimen/font_small</dimen>
+    <dimen name="radio_checkbox_text_margin_left">15dp</dimen>
+
+    <dimen name="group_switch_sub_text_space">10dp</dimen>
+
+    <dimen name="preview">170dp</dimen>
+    <dimen name="preview_space">26dp</dimen>
+    <dimen name="preview_padding">3dp</dimen>
+    <dimen name="preview_border">1dp</dimen>
+
+    <dimen name="group_items_space_side">18dp</dimen>
+    <dimen name="group_items_divisor_height">1dp</dimen>
+
+    <dimen name="group_button_height">70dp</dimen>
+    <dimen name="group_button_font">17sp</dimen>
+    <dimen name="group_button_color_icon">25dp</dimen>
+    <dimen name="group_text">12sp</dimen>
+
+    <dimen name="color_picker_hue_height">17dp</dimen>
+    <dimen name="color_picker_transparency_height">@dimen/color_picker_hue_height</dimen>
+    <dimen name="color_picker_space">18dp</dimen>
+    <dimen name="color_picker_label">@dimen/font_smaller</dimen>
+    <dimen name="color_picker_value">@dimen/font_small</dimen>
+    <dimen name="color_picker_selector">15dp</dimen>
+
+    <dimen name="popup_color_width_percentage">1</dimen>
+
+    <dimen name="popup_button_divisor_width">1dp</dimen>
+</resources>
