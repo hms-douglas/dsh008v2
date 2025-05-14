@@ -139,35 +139,36 @@ Ethereum | 0xfea5dd21ebf73c5b4a2445c7713f6b5316dfac4d
 ##
 ### Compatibilidade (relógio, v1.0.0)
 Deve funcionar com qualquer relógio com Wear OS 4 ou acima. Eu não testei em telas quadradas, pode não renderizar corretamente.
+</br>Qualquer calendário que use as APIs CalendarContract ou WearableCalendarContract são compatíveis, dentre eles o calendário padrão da samsung e o google calendário.
 
 ##
-### Tested devices (watch, v1.0.0)
-- Galaxy Watch 7 on RTL¹ (Android 14 / Wear OS 5);
-- Galaxy Watch 6 on RTL¹ (Android 13 / Wear OS 4);
+### Dispositivos testados (relógio, v1.0.0)
+- Galaxy Watch 7 no RTL¹ (Android 14 / Wear OS 5);
+- Galaxy Watch 6 no RTL¹ (Android 13 / Wear OS 4);
 - Galaxy Watch 5 (Android 14 / Wear OS 5);
-- Emulator (API 33 and 34 / Small and large circular screen).
+- Emulador (API 33 e 34 / Tela redonda, pequena e grande).
 </br>
-¹ Samsung <a href="https://developer.samsung.com/remote-test-lab">Remote Test Lab</a>.
+¹ Samsung <a href="https://developer.samsung.com/remote-test-lab">Remote Test Lab</a> (Laboratório de teste remoto).
 
 ##
-### Log (watch)
+### Log (relógio)
 <b>v1.0.0</b>
 <ul>
-  <li>Release.</li>
+  <li>Produção.</li>
 </ul>
 
 ##
-### Log (phone)
+### Log (celular)
 <b>v1.0.0</b>
 <ul>
-  <li>Release.</li>
+  <li>Produção.</li>
 </ul>
 
 ##
-### License
-Copyright © 2025-present Douglas Silva
+### Licença
+Copyright © 2025-atual Douglas Silva
 </br>
 </br>
-This project has no license ("without a license")!
+Este projeto não possui uma licença ("sem uma licença")
 
-Check github's rules for [choosing the right license](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository#choosing-the-right-license) to understand what it means...
+Verifique as regras do github para [escolher uma licença ideal](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository#choosing-the-right-license) para entender o que isso significa...
