@@ -107,25 +107,25 @@ Ethereum | 0xfea5dd21ebf73c5b4a2445c7713f6b5316dfac4d
 </br>- 7, quando você adiciona/muda o mostrador.
 
 7) Por que não está atualizando?
-> Bem, o Wear OS limita as coisas que um app pode fazer (para salvar bateria, já que o Wear OS é mal otimizado). Verifique que o app não foi adicionado à lista de apps suspensos (algumas vezes o Wear OS faz isso automaticamente), caso ele estaja nessa lista ele não vai atualizar, você precisa remover ele e tocar no mostrador para corrigir o problema. Além disso, a atualização automatica pode não funcionar em alguns casos, como: aod, dormindo, economia de bateria, etc). Vale a pena ressaltar que sincronizar entre o relógio e o celular leva algum tempo (segundos, normalmente) portanto os eventos não são adicionados "instantaneamente".
+> Bem, o Wear OS limita as coisas que um app pode fazer (para salvar bateria, já que o Wear OS é mal otimizado). Verifique se o app não foi adicionado à lista de apps suspensos (algumas vezes o Wear OS faz isso automaticamente), caso ele esteja nessa lista, ele não vai atualizar, você precisa remover ele e clicar no mostrador para corrigir o problema. Além disso, a atualização automática pode não funcionar em alguns casos, como: aod, modo soneca, economia de bateria, etc). Vale a pena ressaltar que sincronizar o relógio e o celular leva algum tempo (segundos, normalmente) portanto os eventos não são adicionados "instantaneamente".
 
 8) Posso mudar a ordem dos eventos? Posso adicionar um evento personalizado ao app? Posso mudar a cor do evento? De onde são esses eventos?
-> Os eventos são da api WearableCalendarContract (para o relógio) e CalendarContract (para o celular). Se o seu app de calendário usa a api do CalendarContract, os dados devem ser sincronizados com o mostrador sem nenhum problema. Os eventos de dia inteiro são mostrados primeiros, e os demais pela hora de início. Por enquanto não é possivel adicionar eventos personalizados (talvez no futuro, talvez!). As informações do evento no seu app de calendário (título, cor, horário) são as que será utilizadas no mostrador.
+> Os eventos são da api WearableCalendarContract (para o relógio) e CalendarContract (para o celular). Se o seu app de calendário usa a api do CalendarContract, os dados devem ser sincronizados com o mostrador sem nenhum problema. Os eventos de dia inteiro são mostrados primeiro, e os demais pela hora de início. Por enquanto não é possivel adicionar eventos personalizados (talvez no futuro, talvez!). As informações do evento no seu app de calendário (título, cor, horário) são as que serão utilizadas no mostrador.
 
 9) Por que o evento não está aparecendo?
-> Eu não sei. Pode ser que o evento tenha terminado, então ele não aparece. Caso se uma "task" ele não aparece. Pode ser um caracter incomum no título. Talvez os eventos estejam se sobrepondo, então não há espaço disponível (no máximo 3 anéis). Talvez o horário de início/fim. Talvez o Wear OS tenha removido a permissão, dai você tem que adicioná-la novamente. Ou pode ser um bug (se for me fale, mas com detalhes específicos!)...
+> Eu não sei. Pode ser que o evento tenha terminado, então ele não aparece. Caso seja uma "task" ele não aparece. Pode ser um caracter incomum no título. Talvez os eventos estejam se sobrepondo, então não há espaço disponível (no máximo 3 anéis). Talvez o horário de início/fim. Talvez o Wear OS tenha removido a permissão, dai você tem que adicioná-la novamente. Ou pode ser um bug (se for me fale, mas com detalhes específicos!)...
 
 10) Tem relógio digital?
-> +/-. Eu adicionei um ponteiro com um relógio digital nele. Como o WFF é limitado eu não consigo mudar a posição das complications depois que elas são definidas, portanto, adicionar um relógio digital igual ao da versão 1 não é possivel. O Wear OS também não permite mais de um mostrador por projeto.
+> +/-. Eu adicionei um ponteiro com um relógio digital nele. Como o WFF é limitado eu não consigo mudar a posição das complications depois que elas são definidas, portanto adicionar um relógio digital igual ao da versão 1 não é possivel. O Wear OS também não permite mais de um mostrador por projeto.
 
 11) Por que a cor da complication não segue as que eu defini?
 > Culpa do WFF. Isso acontece até com outros mostradores de outros desenvolvedores.
 
 12) Posso mudar o estilo/cor do ponteiro do bloco?
-> Não. Por equanto você pode, apenas, mostrar/esconder o ponteiro do minute. Talvez no futuro.
+> Não. Por equanto você pode, apenas, mostrar/esconder o ponteiro do minuto. Talvez no futuro.
 
 13) Por que um bloco?
-> Atualiza quando você mostra ele, então economiza bateria, além de que algumas pessoas podem não querer um mostrador, mas sim um estilo de calendário diferente.
+> Atualiza somente quando você mostra ele, então economiza bateria, além de que algumas pessoas podem não querer um mostrador, mas sim um estilo de calendário diferente.
 
 14) Por que não tem ponteiro digital no widget?
 > Muito complicado de adicionar, o design dos widgets também são limitados, por uma boa razão. No futuro eu vou adicionar um widget com relógio digital.
@@ -134,7 +134,7 @@ Ethereum | 0xfea5dd21ebf73c5b4a2445c7713f6b5316dfac4d
 > Sim, mas para isso você deve sincronizar manualmente toda vez que você mudar uma configuração no celular.
 
 16) Como eu posso customizar?
-> As customizações relacionadas ao mostrador (ponteiros, cor dos ponteiros, complications, complication colors, ...) podem ser feitas usando o editor do relógio (toque e segure o mostrador, depois click em customizar/editar). As customizações relacionados ao calendário podem ser feitas dentro do app (abra o menu do relógio, role até o app e abra-o).
+> As customizações relacionadas ao mostrador (ponteiros, cor dos ponteiros, complications, cor dos complications, ...) podem ser feitas usando o editor do relógio (toque e segure o mostrador, depois clique em customizar/editar). As customizações relacionados ao calendário podem ser feitas dentro do app (abra o menu do relógio, role até o app e abra-o).
 
 ##
 ### Compatibilidade (relógio, v1.0.0)
