@@ -33,9 +33,9 @@ TODO ADICIONAR IMAGEM AQUI
 ##
 ### Installing the watch face
 #### Option 1:
-- Download manually the watch apk¹(link above) and install it using adb or a specific app (you can use "bugjaeger" / search it on google play / there are tons of videos on youtube teaching how to sideload apks/apps to your watch).
+- Download manually the watch apk¹ (link above) and install it using adb or a specific app (you can use "bugjaeger" / search it on google play / there are tons of videos on youtube teaching how to sideload apks/apps to your watch).
   
-#### Option 2:
+#### Option 2 (recommended):
 - Download manually the phone apk¹ and install it on your phone²;
 - Once it is intalled, open the phone app;
 - Click on the more icon (three dots, top right side);
