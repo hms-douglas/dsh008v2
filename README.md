@@ -134,7 +134,7 @@ app without any problem. It will display all day events first then order the res
 > Yes, but you have to click on sync every time you wish to make the watch match the phones settings.
 
 16) How do I customize it?
-> Settings related to the watch face (hand style, hand color, complications (3 slots), complication color) should be set using the default watch face editor (tap and hold the watch face then click on customize/edit). Settings related to the calendar should be set inside the app (open the watch menu, scroll to the apl and open it).
+> Settings related to the watch face (hand style, hand color, complications (3 slots), complication color) should be set using the default watch face editor (tap and hold the watch face then click on customize/edit). Settings related to the calendar should be set inside the app (open the watch menu, scroll to the app and open it).
 
 ##
 ### Compatibility (watch, v1.0.0)
