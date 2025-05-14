@@ -139,6 +139,7 @@ app without any problem. It will display all day events first then order the res
 ##
 ### Compatibility (watch, v1.0.0)
 It should work with any watch with Wear OS 4 or above. I haven't tested on squared screens, it might not render correctly.
+</br>Any calendar app that uses the CalendarContract or the WearableCalendarContract API is compatible, including samsung default calendar and google calendar. Tasks and reminders are not supported!
 
 ##
 ### Tested devices (watch, v1.0.0)
