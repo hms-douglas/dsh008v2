@@ -53,6 +53,10 @@ TODO ADICIONAR IMAGEM AQUI
 
 ##
 ### Donations
+- If you would like to support me, you can make a donation clicking on the button bellow... Thank you! ❤️
+  <a href="https://www.paypal.com/donate/?hosted_button_id=YY4PVZXZZQN6L">
+  <img src="readme/en/paypal.png" width="160" height="50"/>
+  </a>
 
 ##
 ### FAQ (Saving your time [and mine])
