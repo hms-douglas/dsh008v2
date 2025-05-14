@@ -133,9 +133,9 @@ It should work with any watch with Wear OS 4 or above. I haven't tested on squar
 - Galaxy Watch 5 (Android 14 / Wear OS 5);
 - Galaxy Watch 7 on RTL¹ (Android 14 / Wear OS 5);
 - Galaxy Watch 6 on RTL¹ (Android 13 / Wear OS 4);
-- Emulator (API 33 and 34 / Small large screen).
+- Emulator (API 33 and 34 / Small large circular screen).
 </br>
-¹ RTL = Samsung [Remote test lab](https://developer.samsung.com/remote-test-lab)
+¹ RTL = Samsung [Remote Test Lab](https://developer.samsung.com/remote-test-lab)
 
 ##
 ### Log (watch)
