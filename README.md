@@ -128,6 +128,6 @@ TODO ADICIONAR IMAGEM AQUI
 
 ##
 ### License
-This project has no license!
+This project has no license ("without a license")!
 
 Check github's rules for [choosing the right license](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository#choosing-the-right-license) to understand what it means...
