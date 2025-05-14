@@ -93,27 +93,31 @@ TODO ADICIONAR IMAGEM AQUI
  > 7, when you change/set the watch face.
 
 7) Why it is not updating/refreshing?
-> Well, Wear OS limits what an app can do (so it saves battery, as it is badly optimized). Check if the app was not added to the sleeping list (sometimes Wear OS adds it automatically to this list), in case it is, it won't update automatically until you remove it, you will need to tap the watch face to update. Also, it might not update while the watch is in some modes, like: aod, sleeping, battery saving, etc.
+> Well, Wear OS limits what an app can do (so it saves battery, as it is badly optimized). Check if the app was not added to the sleeping list (sometimes Wear OS adds it automatically to this list), in case it is, it won't update automatically until you remove it, you will need to tap the watch face to update. Also, it might not update while the watch is in some modes, like: aod, sleeping, battery saving, etc. Is also worth saying that syncing between your phone and watch takes some time (a few seconds usually), therefore events might not be added to the watch face "instantaneously".
 
 8) Can I change the order of the events? Can I add a custom event to the app? Can I change the event color? Where does the events come from?
-> The events comes from your phone's calendar. As long as your watch and you phone are using the same account for the calendar, it should display the events without no problem. It will display all day events first then order the rest by their start time. For now is not possible to add custom events (maybe in a future update, maybe!). The event info is the one your calendar provides (title, color, start and end time) you must set those infos inside your calendar app.
+> The events comes from the WearableCalendarContract (watch app) and CalendarContract (phone app). As long as your calendar app uses the CalendarContract api the data should be rendenred by this app
+app without any problem. It will display all day events first then order the rest by their start time. For now is not possible to add custom events (maybe in a future update, maybe!). The event info is the one your calendar provides (title, color, start and end time) you must set those infos inside your calendar app.
 
-9) Can I set a digital clock?
+9) Why is the event not showing?
+> I don't know. If the event has ended it won't be rendered. If it is a "task" it won't be rendered, only events are rendered. If it has an "unusual" character in its title it won't render. Maybe the events are overlapping and there is no space left (max of 3 rings). Maybe is the ending/starting time. Maybe the watch has removed the calendar permission and you need to grant it again (open the app or go to the watch settings). Or a bug (let me know, with specific details!)...
+
+10) Can I set a digital clock?
 > Ish. I added an analog hand with a digital clock on it. The WFF is limited, I cannot change the position of the complications after it is set, so adding a digital clock like the one on version 1 is not possible.
 
-10) Why the complication color doesn't follow the ones I set?
+11) Why the complication color doesn't follow the ones I set?
 > WFF fault. It happens with other watch faces too.
 
-11) Can I change the tile hand style/color?
+12) Can I change the tile hand style/color?
 > No, for now you can only show/hide the minute hand, again, maybe in the future.
 
-12) Why a tile?
+13) Why a tile?
 > Updates only when you navigates to it, so it saves more battery, besides some people might not like the watch face but still want a different kind of calendar on their watch.
 
-13) Why no digital hand on widget?
+14) Why no digital hand on widget?
 > Too complicated to add, widgets design are also limited, for a good reason. Maybe in future I add a digital clock widget with the calendar around it.
 
-14) Does the watch and phone settings sync?
+15) Does the watch and phone settings sync?
 > Yes, but you have to click on sync every time you wish to make the watch match the phones settings.
 
 ##
