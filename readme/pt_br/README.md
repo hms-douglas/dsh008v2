@@ -103,7 +103,7 @@ Ethereum | 0xfea5dd21ebf73c5b4a2445c7713f6b5316dfac4d
 </br>- 3, aproximadamente 1 minuto após o termino de um evento;
 </br>- 4, a cada 1 hora após a última atualização (apenas se não houver eventos, caso tenha eventos ele segue a regra 3);
 </br>- 5, quando você adiciona/remove/atualiza um evento (o app do celular precisa estar instaldo para essa regra funcionar);
-</br>- 6, quando dia muda, por exemplo, do dia 1 pro dia 2;
+</br>- 6, quando o dia muda, por exemplo, do dia 1 pro dia 2;
 </br>- 7, quando você adiciona/muda o mostrador.
 
 7) Por que não está atualizando?
