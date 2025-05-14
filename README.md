@@ -96,12 +96,12 @@ Ethereum | 0xfea5dd21ebf73c5b4a2445c7713f6b5316dfac4d
 > As I need an external way of updating the complication, adding multiple "favorites" would get complex...
 
 6) When does it updates/refresh? What frequency?
-> Seven cases:
+> 7 cases:
 </br>- 1, you tap the watch face;
 </br>- 2, you open and close the watch app;
-</br>- 3, approximately one minute after a event ends;
+</br>- 3, approximately 1 minute after a event ends;
 </br>- 4, every 1 hour after the last update (in case of no events, if there is an event it falls back on case 3);
-</br>- 5, when you add/remove/update and event (phone app must be installed for this to work);
+</br>- 5, when you add/remove/update an event (phone app must be installed for this to work);
 </br>- 6, when day changes;
 </br>- 7, when you change/set the watch face.
 
