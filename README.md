@@ -1,5 +1,5 @@
 # DS H008 v2 - Calendar watch face, complication and widget
-Current versions (click the badge to download the apk): 
+Current versions (click on the badge to download the apk): 
 [![version](https://img.shields.io/badge/watch-v1.0.0-FBD75B)](https://hms-douglas.github.io/dsh008v2/dist/apks/watch/1.0.0.apk)
 [![version](https://img.shields.io/badge/phone-v1.0.0-FBD75B)](https://hms-douglas.github.io/dsh008v2/dist/apks/phone/1.0.0.apk)
 
@@ -135,7 +135,7 @@ It should work with any watch with Wear OS 4 or above. I haven't tested on squar
 - Galaxy Watch 6 on RTL¹ (Android 13 / Wear OS 4);
 - Emulator (API 33 and 34 / Small large circular screen).
 </br>
-¹ RTL = Samsung [Remote Test Lab](https://developer.samsung.com/remote-test-lab)
+¹ Samsung [Remote Test Lab](https://developer.samsung.com/remote-test-lab) 
 
 ##
 ### Log (watch)
