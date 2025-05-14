@@ -95,7 +95,7 @@ TODO ADICIONAR IMAGEM AQUI
 > The events comes from your phone's calendar. As long as your watch and you phone are using the same account for the calendar, it should display the events without no problem. It will display all day events first then order the rest by their start time. For now is not possible to add custom events (maybe in a future update, maybe!). The event info is the one your calendar provides (title, color, start and end time) you must set those infos inside your calendar app.
 
 9) Can I set a digital clock?
-> Ish. I added a analog hand with a digital clock on it. The WFF is limited, I cannot change the position of the complications after it is set, so adding a digital clock like the one on version 1 is not possible.
+> Ish. I added an analog hand with a digital clock on it. The WFF is limited, I cannot change the position of the complications after it is set, so adding a digital clock like the one on version 1 is not possible.
 
 10) Why the complication color doesn't follow the ones I set?
 > WFF fault. It happens with other watch faces too.
