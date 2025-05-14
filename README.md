@@ -67,7 +67,7 @@ If you would like to support me, you can make a donation using the options bello
 </a>
 </br>
 
- Cripto | Address
+ Coin | Address
 ----|----|
 Bitcoin | 3NkK4LMwMhKefe2phqf7Vrp1uQynu1Gs6x
 Ethereum | 0xfea5dd21ebf73c5b4a2445c7713f6b5316dfac4d
