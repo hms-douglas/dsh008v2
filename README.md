@@ -121,6 +121,22 @@ app without any problem. It will display all day events first then order the res
 15) Does the watch and phone settings sync?
 > Yes, but you have to click on sync every time you wish to make the watch match the phones settings.
 
+16) How do I customize it?
+> Settings related to the watch face (hand style, hand color, complications (3 slots), complication color) should be set using the default watch face editor (tap and hold the watch face then click on customize/edit). Settings related to the calendar should be set inside the app (open the watch menu, scroll to the apl and open it).
+
+##
+### Compatibility (watch, v1.0.0)
+It should work with any watch with Wear OS 4 or above. I haven't tested on squared screens, it might not render correctly.
+
+##
+### Tested devices (watch, v1.0.0)
+- Galaxy Watch 5 (Android 14 / Wear OS 5);
+- Galaxy Watch 7 on RTL¹ (Android 14 / Wear OS 5);
+- Galaxy Watch 6 on RTL¹ (Android 13 / Wear OS 4);
+- Emulator (API 33 and 34 / Small large screen).
+</br>
+¹ RTL = Samsung [Remote test lab](https://developer.samsung.com/remote-test-lab)
+
 ##
 ### Log (watch)
 <b>v1.0.0</b>
@@ -137,6 +153,8 @@ app without any problem. It will display all day events first then order the res
 
 ##
 ### License
+Copyright © 2025-present Douglas Silva
+</br>
 This project has no license ("without a license")!
 
 Check github's rules for [choosing the right license](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository#choosing-the-right-license) to understand what it means...
