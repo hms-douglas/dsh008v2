@@ -48,6 +48,7 @@ TODO ADICIONAR IMAGEM AQUI
 ¹ Links to download the latest version are at the top of this document (badges). All apks inside this repository were built by me and are not minified;
 </br>
 ² Google Play Protect may prevent the app from being installed using the apk file (as the app is not on google play). In this case, disable the Google Play Protect, install the file and then enable it again;
+</br>
 ³ Check license topic bellow.
 
 ##
