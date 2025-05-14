@@ -101,7 +101,7 @@ TODO ADICIONAR IMAGEM AQUI
 > WFF fault. It happens with other watch faces too.
 
 11) Can I change the tile hand style/color?
-> No, for now you can show/hide the minute hand, again, maybe in the future.
+> No, for now you can only show/hide the minute hand, again, maybe in the future.
 
 12) Why a tile?
 > Updates only when you navigates to it, so it saves more battery, besides some people might not like the watch face but still want a different kind of calendar on their watch.
