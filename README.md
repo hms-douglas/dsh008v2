@@ -1,7 +1,7 @@
 # DS H008 v2 - Calendar watch face, complication and widget
-Current versions (download apk): 
-[![version](https://img.shields.io/badge/watch-v1.0.0-FBD75B)](https://github.com/hms-douglas/dsh008v2/tree/main/dist/apks/watch)
-[![version](https://img.shields.io/badge/phone-v1.0.0-FBD75B)](https://github.com/hms-douglas/dsh008v2/tree/main/dist/apks/phone)
+Current versions (click the badge to download the apk): 
+[![version](https://img.shields.io/badge/watch-v1.0.0-FBD75B)](https://hms-douglas.github.io/dsh008v2/dist/apks/watch/1.0.0.apk)
+[![version](https://img.shields.io/badge/phone-v1.0.0-FBD75B)](https://hms-douglas.github.io/dsh008v2/dist/apks/phone/1.0.0.apk)
 
 Change README language: 
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](https://github.com/hms-douglas/dsh008v2)
