@@ -81,7 +81,7 @@ Ethereum | 0xfea5dd21ebf73c5b4a2445c7713f6b5316dfac4d
 
 2) Você vai atualizar o calendário da versão 1 para a versão 2 (este código) no Google Play?
 > Não, por 2 motivos:
-</br>- Um, eu perdi (e os backups são antigos 😅) os arquivos de diversos projetos que eu tenho Google Play (não tem como atulizar eles a não ser que eu construa eles do zero ou trabalhe nos backups desatualizados);
+</br>- Um, eu perdi (e os backups são antigos 😅) os arquivos de diversos projetos que eu tenho no Google Play (não tem como atulizar eles a não ser que eu construa eles do zero ou trabalhe nos backups desatualizados);
 </br>- Dois, este código/projeto (já que eu estou utilizando o WFF e eu tive que construi-lo do zero kkk) é completamente diferente da versão 1, portanto diversas "adaptações" seriam necessárias (novamente, a versão 1 usa a api do jetpack para mostradores).
 
 3) Por que você não publica essa versão no Google Play?
