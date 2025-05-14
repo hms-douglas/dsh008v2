@@ -139,7 +139,7 @@ Ethereum | 0xfea5dd21ebf73c5b4a2445c7713f6b5316dfac4d
 ##
 ### Compatibilidade (relógio, v1.0.0)
 Deve funcionar com qualquer relógio com Wear OS 4 ou acima. Eu não testei em telas quadradas, pode não renderizar corretamente.
-</br>Qualquer calendário que use as APIs CalendarContract ou WearableCalendarContract são compatíveis, dentre eles o calendário padrão da samsung e o google calendário.
+</br>Qualquer calendário que use as APIs CalendarContract ou WearableCalendarContract são compatíveis, dentre eles o calendário padrão da samsung e o google calendário. Tasks (tarefas) e lembretes não são suportados!
 
 ##
 ### Dispositivos testados (relógio, v1.0.0)
