@@ -19,6 +19,7 @@ TODO ADICIONAR IMAGEM AQUI
   <li>Watch app:
     <ul>
       <li>Calendar watch face;</li>
+      <li>Calendar tile;</li>
       <li>Calendar complication.</li>
     </ul>
   </li>
