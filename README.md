@@ -75,7 +75,7 @@ TODO ADICIONAR IMAGEM AQUI
 > Only if it starts today. Even though it would be "cut" at midnight. The watch face shows only the events from today!
 > The scissor icon is for events that had their "time cut" to be displayed (the event time won't change on your calendar, it will only be displayed differently, for example, if it ends after midnight it will be displayed (today) until midnight and after midnight it will display as if it started midnight).
 
-5) Why can't I add more then one watch face?
+5) Why can't I add more than one watch face?
 > As I need an external way of updating the complication, adding multiple "favorites" would get complex...
 
 6) When does it updates/refresh? What frequency?
