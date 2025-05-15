@@ -10,7 +10,8 @@ DS H008 v2 is the second version of the calendar watch face. It is built using W
 The project also includes a phone app. It can be used to install/update the watch app easily. The phone app provides a widget to be used on the phone home screen as well.
 </br>
 </br>
-TODO ADICIONAR IMAGEM AQUI
+<img src="readme/en/watchface.gif" width="25%"/><img src="readme/en/tile.gif" width="25%"/><img src="readme/en/widget.gif" width="25%"/><img src="readme/en/installer.gif" width="25%"/>
+
 ##
 ### Features
 <ul>
