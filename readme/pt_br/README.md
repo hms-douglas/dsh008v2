@@ -11,7 +11,8 @@ Além do mostrador, o app do relógio agora conta com um bloco, que segue o mesm
 O projeto também inclui um app para celular. Ele pode ser utilizado para instalar/atualizar o app do relógio rapidamente. O app do celular também conta com um widget.
 </br>
 </br>
-TODO ADICIONAR IMAGEM AQUI
+<img src="./watchface.gif" width="25%"/><img src="./tile.gif" width="25%"/><img src="./widget.gif" width="25%"/><img src="./installer.gif" width="25%"/>
+
 ##
 ### Recursos
 <ul>
