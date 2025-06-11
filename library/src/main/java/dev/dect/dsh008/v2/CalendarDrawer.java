@@ -812,7 +812,7 @@ public class CalendarDrawer {
 
     private boolean areRangesAvailableInList(int[] ranges, List<Integer> list) {
         for(int i = 0; i < list.size(); i += 2) {
-            final Range<Integer> range = Range.create(Math.min(list.get(i), list.get(i + 1)), Math.max(list.get(i), list.get(i + 1)));
+            final Range<Integer> range = Range.create(Math.min(list.get(i), list.get(i + 1)) + 1, Math.max(list.get(i), list.get(i + 1)) - 1);
 
             for(int j = 0; j < ranges.length; j += 2) {
                 if(range.contains(ranges[j]) || range.contains(ranges[j + 1])) { //If the start and end event range is being used in tis ring
